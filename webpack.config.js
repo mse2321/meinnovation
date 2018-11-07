@@ -2,31 +2,35 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: 'development',
-  entry: '.src/index.js',
+  mode: "development",
+  entry:  ["./src/index.js", "./src/scss/main.scss"],
   watch: true,
   module: {
-	rules: [{
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+          options: { 
+            presets: ["@babel/preset-env","@babel/preset-react"]
+          }
+        }
+      },
+      {
         test: /\.scss$/,
+        exclude: [/node_modules/], 
         use: [
-	        {
-	           process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
-	           options: {
-	            // you can specify a publicPath here
-	            // by default it use publicPath in webpackOptions.output
-	            publicPath: '.public/css/'
-	           }
-	        },
-            // fallback to style-loader in development
-            
-            "css-loader", // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+          "style-loader", // creates style nodes from JS strings
+          "css-loader", // translates CSS into CommonJS
+          "sass-loader" // compiles Sass to CSS, using Node Sass by default
         ]
-    }]
+      }
+    ]
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.js",
+    publicPath: "/dist"
   },
   plugins: [
     new MiniCssExtractPlugin({

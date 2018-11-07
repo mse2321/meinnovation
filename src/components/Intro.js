@@ -7,11 +7,11 @@ class Intro extends Component {
         <div id="intro_data">
           <div id="intro_logo_wrap">
             <p>Marcus Eubanks: Innovation</p>
-            </div> <!-- end of logo_wrap -->
+            </div>
             <div id="welcome_wrap">
             <p className="welcome">Front-End Developer with design and marketing chops</p>
-          </div> <!-- end of welcome_wrap -->
-        </div> <!-- end of intro_wrap -->
+          </div>
+        </div>
       </section>
     );
   }

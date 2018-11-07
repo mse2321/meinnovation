@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import About from './components/About';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
+import Footer from './Footer';
+import Header from './Header';
+import Nav from './Nav';
+import About from './About';
+import Intro from './Intro';
+import Projects from './Projects';
 
 class App extends Component {
   render() {

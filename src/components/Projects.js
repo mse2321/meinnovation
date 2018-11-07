@@ -7,22 +7,21 @@ class Projects extends Component {
         <div id="main_wrap">
           <h1>Projects</h1>
           <div className="instructions">
-            <!-- set angular binding to change the instructions based on screen width -->
-            <p>Swipe through the images or use the dots below to view projects.<br><span>Double tap the images for more details.</span></p>
-          </div> <!-- end of instructions -->
+            <p>Swipe through the images or use the dots below to view projects.</p>
+            <p>Double tap the images for more details.</p>
+          </div>
           <div id="gallery_wrap">
             <gallery>
               <photo>
-                <img id="gallery_image" className="slide-animation"  src=""  alt=""> 
+                <img id="gallery_image" className="slide-animation"  src=""  alt="" /> 
               </photo>
               <div className="slide_selection">
                 <div className="slide_selectors">
-                  <a>&#8226;</a>
+                  <a href="sample">&#8226;</a>
                 </div>
               </div>
-              <!-- end of slide_selection -->
             </gallery>
-          </div> <!-- end of gallery_wrap -->
+          </div>
           <div id="metadata">
             <div className="meta_wrap">
               <div>
@@ -40,8 +39,8 @@ class Projects extends Component {
                 <i className="fa fa-times" aria-hidden="true"></i>
               </div>
             </div>
-          </div> <!-- end of metadata -->
-        </div> <!-- end of main_wrap -->
+          </div>
+        </div>
       </section>
     );
   }
