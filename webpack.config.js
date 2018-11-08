@@ -41,7 +41,7 @@ module.exports = {
     new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        chunkFilename: "main.css"
+        chunkFilename: "./dist/main.css"
     }),
     new CopyWebpackPlugin([
       { from: './public' }
