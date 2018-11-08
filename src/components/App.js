@@ -6,9 +6,9 @@ import About from './About';
 import Intro from './Intro';
 import Projects from './Projects';
 
-class App extends Component {
+class App extends React.Component {
   render() {
-    return (
+    return(
       <div id="container">
         <Header />
         <Intro />
@@ -17,7 +17,7 @@ class App extends Component {
         <Nav />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
