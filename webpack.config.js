@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 process.env.BABEL_ENV = "development";
 process.env.NODE_ENV = "development";
@@ -36,12 +37,14 @@ module.exports = {
     contentBase: './dist',
     historyApiFallback: true
   },
- /* plugins: [
+  plugins: [
     new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
         chunkFilename: "main.css"
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: './public' }
+    ])
   ]
-  */
 };
