@@ -5,24 +5,15 @@ class About extends Component {
     return (
       <section id="about">
         <div id="about_wrap">
-          <h1>About ME</h1>
-            <p>I truly love what I do and combine design, marketing, and programming skills to help web development projects succeed.</p>
+          <h1>Skills</h1>
           <div className="stats_wrap">
             <div className="stats_col">
-              <div className="stats_heading"><i className="fa fa-wrench" aria-hidden="true"></i><h3>Heading</h3></div>
-              <div className="stats"></div>
+              <div className="stats_heading"><i className="fa fa-wrench" aria-hidden="true"></i><h3>Tools</h3></div>
+              <div className="stats">Illustrator, Dreamweaver, PhotoShop, Github/Git, BitBucket, WAMP/XAMPP, NPM, Grunt, Gulp, Webpack</div>
             </div>
             <div className="stats_col">
-              <div className="stats_heading"><i className="fa fa-code" aria-hidden="true"></i><h3>Heading</h3></div>
-              <div className="stats"></div>
-            </div>
-            <div className="stats_col">
-              <div className="stats_heading"><i className="fa fa-battery-quarter" aria-hidden="true"></i><h3>Heading</h3></div>
-              <div className="stats"></div>
-            </div>
-            <div className="stats_col">
-              <div className="stats_heading"><i className="fa fa-battery-quarter" aria-hidden="true"></i><h3>Heading</h3></div>
-              <div className="stats"></div>
+              <div className="stats_heading"><i className="fa fa-code" aria-hidden="true"></i><h3>Technologies</h3></div>
+              <div className="stats">HTML/CSS3, JavaScript (ES6), SQL, SASS, jQuery, Bootstrap, Angular 1.5, JSON, PHP, React/Redux, Wordpress</div>
             </div>
           </div>
         </div>
