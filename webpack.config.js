@@ -1,6 +1,6 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 process.env.BABEL_ENV = "development";
 process.env.NODE_ENV = "development";
@@ -21,11 +21,9 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS, using Node Sass by default
-        ]
+        use: ExtractTextWebpackPlugin.extract({
+          use: ["css-loader", "sass-loader"], 
+        }),
       }
     ]
   },
@@ -38,13 +36,10 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    new MiniCssExtractPlugin({
-        // Options similar to the same options in webpackOptions.output
-        // both options are optional
-        chunkFilename: "./dist/main.css"
-    }),
     new CopyWebpackPlugin([
-      { from: './public' }
-    ])
+      { from: './public' },
+      { from: './src/images', to: './images' }
+    ]),
+    new ExtractTextWebpackPlugin("main.css")
   ]
 };

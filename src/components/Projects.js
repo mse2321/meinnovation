@@ -11,16 +11,16 @@ class Projects extends Component {
             <p>Double tap the images for more details.</p>
           </div>
           <div id="gallery_wrap">
-            <gallery>
-              <photo>
+            <div className="gallery">
+              <div className="photos">
                 <img id="gallery_image" className="slide-animation"  src=""  alt="" /> 
-              </photo>
+              </div>
               <div className="slide_selection">
                 <div className="slide_selectors">
                   <a href="sample">&#8226;</a>
                 </div>
               </div>
-            </gallery>
+            </div>
           </div>
           <div id="metadata">
             <div className="meta_wrap">

@@ -9,7 +9,7 @@ class About extends Component {
             <p>I truly love what I do and combine design, marketing, and programming skills to help web development projects succeed.</p>
           <div className="stats_wrap">
             <div className="stats_col">
-              <div className="stats_heading"><i class="fa fa-wrench" aria-hidden="true"></i><h3>Heading</h3></div>
+              <div className="stats_heading"><i className="fa fa-wrench" aria-hidden="true"></i><h3>Heading</h3></div>
               <div className="stats"></div>
             </div>
             <div className="stats_col">
@@ -20,7 +20,7 @@ class About extends Component {
               <div className="stats_heading"><i className="fa fa-battery-quarter" aria-hidden="true"></i><h3>Heading</h3></div>
               <div className="stats"></div>
             </div>
-            <div class="stats_col">
+            <div className="stats_col">
               <div className="stats_heading"><i className="fa fa-battery-quarter" aria-hidden="true"></i><h3>Heading</h3></div>
               <div className="stats"></div>
             </div>
