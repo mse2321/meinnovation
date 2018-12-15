@@ -6,6 +6,7 @@ class Intro extends Component {
       <section id="intro_wrap">
         <div id="intro_data">
           <div id="intro_logo_wrap">
+            <img className="intro_logo"  src="images/meinnovationBulb_only.svg"  alt="ME Innovation Logo" /> 
             <p>Marcus Eubanks: Innovation</p>
             </div>
             <div id="welcome_wrap">

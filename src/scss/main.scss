@@ -1,14 +1,36 @@
+@import "_about.scss";
+@import "_footer.scss";
+@import "_header.scss";
+@import "_intro.scss";
+@import "_nav.scss";
+@import "_projects.scss";
+
 
 /* SASS declarations */
-$meinnovation-black: #263238;
-$meinnovation-gray: #546E7A;
-$meinnovation-ltgray: #B0BEC5;
+$meinnovation-black: #FFD740;
+$meinnovation-gray: #BDBDBD;
+$meinnovation-ltgray: #212121;
 
 
 /* General */
-body { font-family: 'Roboto', sans-serif; background-color: #fff; color: #455A64; margin: 0; }
+body { 
+	font-family: 'Roboto', sans-serif; 
+	background-color: #212121; 
+	color: white; 
+	margin: 0; 
 
-header { position: absolute; top: 0; right: 0; left: 0; padding: 20px; }
+	@media screen and (min-width: 900px) {
+		font-size: 18px;
+	}
+}
+
+#container {
+	width: 85%;
+
+	@media screen and (max-width: 599px) {
+		width: 100%;
+	}
+}
 
 section { margin: 200px 0; }
 
@@ -16,122 +38,38 @@ a { text-decoration: none; }
 
 li { list-style-type: none; }
 
-h1, h2 { color: #37474F; font-family: 'Orbitron', sans-serif; }
+h1, h2 { 
+	color: $meinnovation-gray; 
+	font-family: 'Orbitron', sans-serif; 
+}
 
-.fa-bars { cursor: pointer; color: $meinnovation-black; }
+#button_wrap { 
+	position: fixed; 
+	right: 0; 
+	top: 0; 
+	padding-top: 15px; 
+	padding-right: 30px; 
+	font-size: 30px; 
+	z-index: 1000; 
 
-#button_wrap { position: fixed; right: 0; top: 0; padding-top: 15px; padding-right: 30px; font-size: 30px; z-index: 1000; }
-
-.contact_icon img { width: 16%; margin: 0 10px; cursor: pointer; }
-
-#contact_wrap { position: absolute; left: 0; top: 0; padding-top: 20px; text-align: left; padding-left: 20px; width: 70%; }
-
-.slide-show { -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; opacity: 1; width: 70%; }
-.slide-hide { -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; opacity: 0; width: 0; }
-
-
-/* Intro */
-#intro_logo { width: 100%; }
-
-#intro_logo_wrap, #intro_wrap { text-align: center; }
-
-#intro_logo_wrap p { font-size: 35px; font-family: 'Orbitron', sans-serif; margin-bottom: 0; color: $meinnovation-black; }
-
-#intro_wrap { margin-top: 150px; }
-
-#intro_data { padding: 40px; margin: 0 auto; }
-
-
-/* Nav */
-aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 40px; position: fixed; top: 0; right: 0; bottom: 0; width: 0; z-index: 500; opacity: 0; }
-
-nav a { color: $meinnovation-black; font-weight: bold; font-family: 'Orbitron', sans-serif; }
-
-nav a:hover { color: #fff; }
-
-#nav_links { margin-top: 100px; text-align: right; margin-right: 0; }
-
-#nav_links li { margin: 20px 0; }
-
-#button_wrap .fa-times { display: none; cursor: pointer; color: white; }
-
-
-/* About */
-#about_wrap { padding: 30px; font-size: 16px; text-align: center; }
-
-.stats_wrap { padding: 20px; margin: 0 auto; }
-
-.fa-code, .fa-wrench, .fa-battery-quarter { display: inline-block; color: $meinnovation-gray; }
-
-.stats_heading { border-bottom: 2px solid $meinnovation-gray; margin-bottom: 10px; }
-
-.stats_heading h3 { margin-bottom: 5px; display: inline-block; margin-left: 20px; color: $meinnovation-gray; font-family: 'Orbitron', sans-serif; }
-
-.stats { line-height: 25px; }
-
-
-/* Projects */
-photo img { width: 90%; cursor: pointer; }
-
-#gallery_wrap { text-align: center; }
-
-#main_wrap h1 { margin-left: 30px; padding-top: 30px; }
-
-.instructions p { margin-bottom: 30px; }
-
-.instructions span { color: $meinnovation-black; }
-
-.slide_selection { font-size: 80px; }
-
-.slide_selection a { display: inline; }
-
-.slide_selection i { font-size: 40px; vertical-align: middle; margin-bottom: 15px; color: $meinnovation-ltgray; }
-
-#metadata { background-color: $meinnovation-ltgray; position: absolute; top: 680px; height: 100%; right: 0; left: 0; bottom: 0; padding: 0 10px 0 20px; z-index: 2000; visibility: hidden; cursor: pointer; -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; opacity: 0; }
-
-#metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto 10px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
-
-.gitLink { background-color: $meinnovation-gray !important; margin: 10px auto !important; }
-
-.meta_close { position: absolute; right: 0; top: 0; padding-top: 15px; padding-right: 30px; font-size: 30px; z-index: 1000; cursor: pointer; font-size: 30px; color: white; }
-
-.metadata_button_wrap { text-align: center; }
-
-.meta_wrap div { line-height: 30px; }
-
-.slide_selectors { display: inline-block; margin: 0 7px; cursor: pointer; }
-
-.active { color: $meinnovation-ltgray; }
-
-.instructions { text-align: center; padding: 0 20px; }
-
-#desc { margin-bottom: 10px; }
-
-span { font-size: 16px; color: $meinnovation-ltgray; vertical-align: middle; margin: 0 10px 16px 10px; display: inline-block; }
-
-
-/* Footer */
-footer { text-align: center; }
-
+	& .nav_icons {
+		color: $meinnovation-black;
+	}
+}
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	.contact_icon img { width: 7%; cursor: pointer; }
-	#metadata { top: 650px; height: 90%; cursor: pointer; }
 	#intro_logo { width: 80%; }
 	.instructions span { color: $meinnovation-black; }
 	#intro_logo_wrap p { font-size: 45px; }
-	aside { padding: 20px; font-size: 45px; width: 40%; }
 	.slide_selectors { margin: 0 15px; }
 	.slide-show { width: 50%; }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1034px) {
-	body { font-size: 18px; }
 	.contact_icon img { width: 6%; cursor: pointer; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
-	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: white; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding-left: 10px; z-index: 0; display: inline-block; visibility: visible; opacity: 1; width: 39%; text-align: right; height: 70%; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -150,12 +88,9 @@ footer { text-align: center; }
 }
 
 @media screen and (min-width: 1035px) and (max-width: 1199px) {
-	body { font-size: 18px; }
 	.contact_icon img { width: 6%; cursor: pointer; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
-	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: white; position: absolute; top: 710px; right: 0; left: 57.9%; bottom: 0; padding-left: 10px; z-index: 0; visibility: visible; opacity: 1; width: 39%; text-align: right; height: 70%; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -174,12 +109,9 @@ footer { text-align: center; }
 }
 
 @media screen and (min-width: 1200px) {
-	body { font-size: 18px; }
 	.contact_icon img { width: 5%; cursor: pointer; }
 	#intro_logo { width: 60%; }
 	#intro_logo_wrap p { font-size: 80px; }
-	aside { padding: 20px; font-size: 60px; width: 30%; }
-	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 63%; bottom: 0; padding-left: 10px; z-index: 0; visibility: visible; opacity: 1; width: 33.5%; text-align: right; height: 70%; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
@@ -194,17 +126,4 @@ footer { text-align: center; }
 	#nav_links { margin-right: 10px; }
 	.slide_selectors { margin: 0 15px; }
 	.slide-show { width: 30%; }
-
 }
-
-@media screen and (max-height: 399px) {
-	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; visibility: hidden; opacity: 0; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
-	#nav_links { text-align: center; }
-	#nav_links li { display: inline; margin: 20px; }
-	#metadata { height: 100%; top: 850px; }
-}
-
-@media screen and (max-height: 399px) and (max-width: 1029px) {
-	#metadata { height: 100%; top: 750px; }
-}
-

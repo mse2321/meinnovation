@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaGithub, FaLinkedin, FaEnvelopeSquare } from "react-icons/fa";
 
 class Header extends Component {
   render() {
@@ -6,19 +7,15 @@ class Header extends Component {
       <header id="intro">
           <div id="contact_wrap" className="contact">
           <a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" rel="noopener noreferrer" className="contact_icon">
-            <img id="emailIcon" src="images/email_circle-min.png" alt="Send ME an email" />
+            <FaEnvelopeSquare className="contact_icons" />
           </a>
           <a href="http://github.com/mse2321" className="contact_icon" target="_blank" rel="noopener noreferrer">
-            <img id="gitHub" src="images/gitHub_circle-min.png" alt="Check out my GitHub Repositories" />
+            <FaGithub className="contact_icons" />
           </a>
           <a href="http://www.linkedin.com/in/meinnovation" className="contact_icon" rel="noopener noreferrer"target="_blank">
-            <img id="linkedIn" src="images/linkedIn_circle-min.png" alt="Look at my LinkedIn Profile" />
+            <FaLinkedin className="contact_icons" />
           </a>
         </div>
-        <div id="button_wrap">
-          <i className="fa fa-bars" aria-hidden="true"></i>
-          <i className="fa fa-times" aria-hidden="true"></i>
-          </div>
       </header>
     );
   }

@@ -1,0 +1,45 @@
+/* Intro */
+
+/* SASS declarations */
+$meinnovation-black: #FFD740;
+$meinnovation-gray: #BDBDBD;
+$meinnovation-ltgray: #212121;
+
+.intro_logo { 
+	width: 20%;
+
+	@media screen and (max-height: 599px) {
+		width: 50%;
+	}  
+}
+
+#intro_logo_wrap, #intro_wrap { text-align: center; }
+
+#intro_logo_wrap p { 
+	font-size: 35px; 
+	font-family: 'Orbitron', sans-serif; 
+	margin: 0; 
+	color: $meinnovation-black; 
+	text-shadow: 0 0 10px #FFD740;
+
+	@media screen and (max-height: 599px) {
+		font-size: 20px; 
+	}
+}
+
+#intro_wrap { 
+	margin-top: 150px; 
+
+	@media screen and (max-height: 599px) {
+		margin-top: 1rem; 
+	}
+}
+
+#intro_data { 
+	padding: 40px; 
+	margin: 0 auto;
+
+	@media screen and (max-height: 599px) {
+		padding: 0;
+	} 
+}

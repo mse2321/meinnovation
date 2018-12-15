@@ -3,12 +3,27 @@
   "version": "0.1.0",
   "main": "index.js",
   "private": true,
-  "dependencies": {
+  "dependencies": {},
+  "scripts": {
+    "webpack": "webpack | webpack-dev-server --open",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
     "@babel/core": "7.1.0",
     "@babel/preset-env": "^7.1.5",
     "babel-cli": "^6.26.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "8.0.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react-app": "^6.1.0",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "1.0.0",
@@ -24,32 +39,15 @@
     "react-materialize": "^2.4.8",
     "react-redux": "^5.1.0",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.1",
     "redux": "^4.0.1",
     "redux-devtools": "^3.4.1",
     "redux-logger": "^3.0.6",
     "sass": "^1.14.3",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
-    "webpack": "4.19.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "3.1.9"
-  },
-  "scripts": {
-    "webpack": "webpack | webpack-dev-server --open",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "start": "react-scripts start"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   }
 }
