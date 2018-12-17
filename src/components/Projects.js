@@ -5,7 +5,7 @@ class Projects extends Component {
     return (
       <section id="projects">
         <div id="main_wrap">
-          <h1>Projects</h1>
+          <h2>Projects</h2>
           <div className="instructions">
             <p>Swipe through the images or use the dots below to view projects.</p>
             <p>Double tap the images for more details.</p>

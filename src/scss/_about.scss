@@ -5,14 +5,33 @@ $meinnovation-black: #FFD740;
 $meinnovation-gray: #BDBDBD;
 $meinnovation-ltgray: #212121;
 
-#about_wrap { padding: 30px; font-size: 16px; text-align: center; }
+#about_wrap { 
+	padding: 30px; 
+	font-size: 16px; 
+	text-align: center; 
+}
 
-.stats_wrap { padding: 20px; margin: 0 auto; }
+.stats_wrap { 
+	padding: 20px; 
+	margin: 0 auto; 
+}
 
-.fa-code, .fa-wrench, .fa-battery-quarter { display: inline-block; color: $meinnovation-gray; }
+.fa-code, .fa-wrench, .fa-battery-quarter { 
+	display: inline-block; 
+	color: $meinnovation-gray; 
+}
 
-.stats_heading { border-bottom: 2px solid $meinnovation-gray; margin-bottom: 10px; }
+.stats_heading { 
+	border-bottom: 2px solid $meinnovation-gray; 
+	margin-bottom: 10px; 
+}
 
-.stats_heading h3 { margin-bottom: 5px; display: inline-block; margin-left: 20px; color: $meinnovation-gray; font-family: 'Orbitron', sans-serif; }
+.stats_heading h3 { 
+	margin-bottom: 5px; 
+	display: inline-block; 
+	margin-left: 20px; 
+	color: $meinnovation-gray; 
+	font-family: 'Orbitron', sans-serif; 
+}
 
 .stats { line-height: 25px; }

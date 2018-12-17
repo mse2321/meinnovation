@@ -8,20 +8,67 @@ $meinnovation-ltgray: #212121;
 photo img { 
 	width: 90%; 
 	cursor: pointer; 
+
+	@media screen and (min-width: 1200px) {
+		photo img { 
+			width: 60%; 
+			margin-left: 30px; 
+			cursor: default; 
+		}
+	}
 }
 
-#gallery_wrap { text-align: center; }
+#gallery_wrap { 
+	text-align: center; 
+
+	& .slide-selection {
+		@media screen and (min-width: 1200px) {
+			text-align: left;
+		}
+
+	}
+}
 
 #main_wrap h1 { 
 	margin-left: 30px; 
 	padding-top: 30px;
 }
 
+.instructions { 
+	text-align: left; 
+	padding-left: 30px; 
+	display: block; 
+
+	& span {
+		@media screen and (min-width: 1200px) {
+			.instructions span { display: none; }
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#gallery_wrap, .slide_selection { text-align: left; }
+	.instructions span { display: none; }
+	.slide_selection { padding-left: 10px; display: block; }
+	.stats_wrap { width: 60%; }
+	.slide_selectors { margin: 0 15px; }
+	.slide-show { width: 30%; }
+}
+
+
 .instructions p { margin-bottom: 30px; }
 
 .instructions span { color: $meinnovation-black; }
 
-.slide_selection { font-size: 80px; }
+.slide_selection { 
+	font-size: 80px; 
+
+	@media screen and (min-width: 1200px) {
+		padding-left: 10px; 
+		display: block;
+	}
+
+}
 
 .slide_selection a { 
 	display: inline; 
@@ -128,6 +175,10 @@ photo img {
 	border: none; 
 	font-size: 24px; 
 	cursor: pointer; 
+
+	@media screen and (min-width: 1200px) {
+		#metadata button { width: 60%; }
+	}
 }
 
 .gitLink { margin: 10px auto !important;}
@@ -143,11 +194,27 @@ photo img {
 	cursor: pointer; 
 	font-size: 30px; 
 	color: white; 
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+
 }
 
-.metadata_button_wrap { text-align: center; }
+.metadata_button_wrap { 
+	text-align: center; 
 
-.meta_wrap div { line-height: 30px; }
+	@media screen and (min-width: 1200px) {
+		text-align: right;
+	}
+}
+
+.meta_wrap { 
+	padding-left: 100px; 
+
+	& div { line-height: 30px; }
+
+}
 
 .slide_selectors { 
 	display: inline-block; 
@@ -170,4 +237,11 @@ span {
 	vertical-align: middle; 
 	margin: 0 10px 16px 10px; 
 	display: inline-block; 
+}
+
+
+@media screen and (min-width: 1200px) {
+	.stats_wrap { width: 60%; }
+	.slide_selectors { margin: 0 15px; }
+	.slide-show { width: 30%; }
 }
