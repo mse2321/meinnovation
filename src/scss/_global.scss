@@ -7,7 +7,9 @@ $meinnovation-ltgray: #BDBDBD;
 
 /* General */
 
-*  {
+* {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -28,8 +30,8 @@ body {
 }
 
 section { 
-	margin: 200px 0; 
 	padding-left: 2rem;
+	height: 100vh;
 }
 
 a { text-decoration: none; }
@@ -53,6 +55,7 @@ h1 {
 
 h2 { 
 	font-size: 2.5rem; 
+	margin-bottom: 10rem;
 }
 
 h3 {

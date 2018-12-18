@@ -21,7 +21,7 @@ class Nav extends Component {
           </ul>
         </nav>
         <div id="contact_wrap" className="contact">
-          <a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Services%20Inquiry" target="_blank" rel="noopener noreferrer" className="contact_icon">
+          <a href="contact_page" target="_blank" rel="noopener noreferrer" className="contact_icon">
             <FaEnvelopeSquare className="contact_icons" />
           </a>
           <a href="http://github.com/mse2321" className="contact_icon gitHubIcon" target="_blank" rel="noopener noreferrer">

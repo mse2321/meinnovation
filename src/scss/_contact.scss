@@ -1,0 +1,53 @@
+/* SASS declarations */
+$meinnovation-black: #FFD740;
+$meinnovation-gray: #616161;
+$meinnovation-ltgray: #BDBDBD;
+
+.contact_form {
+	border: 1px solid $meinnovation-black;
+	padding: 2rem;
+	width: 40%;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem #FFD740;
+	margin: 0 auto;
+
+	& label {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 0.3rem;
+	}
+
+	& input[type="checkbox"] {
+		display: inline-block;
+	}
+
+	& input, textarea {
+		background-color: $meinnovation-ltgray;
+		border: none;
+		display: block;
+		border-radius: 0.2rem;
+		width: 50%;
+		padding: 0.5rem 0;
+	}
+	
+	& button {
+		background-color: $meinnovation-black;
+		color: #212121; 
+		font-weight: bold; 
+		width: 35%; 
+		margin: 1.5rem auto;
+		padding: 10px 0; 
+		font-family: 'Orbitron', sans-serif; 
+		border: none; 
+		font-size: 24px; 
+		cursor: pointer; 
+		display: block;
+		border-radius: 0.3rem;
+		transition: width 0.5s ease;
+		box-shadow: 0 0 1rem #FFD740;
+	}
+
+	& button:hover {
+		width: 45%;
+	}
+}

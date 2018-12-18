@@ -11,8 +11,43 @@ $meinnovation-ltgray: #BDBDBD;
 
 	& .services_col {
 		vertical-align: top;
-		width: 31%;
+		width: 33%;
 		display: inline-block;
-		padding: 1rem;
+		padding: 3rem;
+
+		& h3 {
+			margin-top: 0.5rem;
+			margin-bottom: 2rem;
+			text-shadow: 0 0 1rem #FFD740;
+		}
 	}
+}
+
+.services_icons  {
+	font-size: 4rem;
+}
+
+.services_button {
+	background-color: $meinnovation-black;
+	color: #212121; 
+	font-weight: bold; 
+	width: 20%; 
+	margin: 1.5rem auto;
+	padding: 10px 0; 
+	font-family: 'Orbitron', sans-serif; 
+	border: none; 
+	font-size: 24px; 
+	cursor: pointer; 
+	display: block;
+	border-radius: 0.3rem;
+	transition: width 0.5s ease;
+	box-shadow: 0 0 1rem #FFD740;
+}
+
+.services_button:hover {
+	width: 25%;
+}
+
+.pitch_container {
+	margin-top: 2rem;
 }
