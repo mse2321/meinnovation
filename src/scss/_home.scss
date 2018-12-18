@@ -1,0 +1,154 @@
+/* Home */
+
+/* SASS declarations */
+$meinnovation-black: #FFD740;
+$meinnovation-gray: #616161;
+$meinnovation-ltgray: #BDBDBD;
+
+#projects {
+	margin: 0;
+	padding-left: 0;
+}
+
+.photos {
+	& img { 
+		width: 100%;
+		opacity: 0.5;
+		cursor: pointer;
+	}
+}
+
+#gallery_wrap { 
+	text-align: center; 
+
+	.slide_selection { 
+		font-size: 80px; 
+		position: absolute;
+		top: 75%;
+		left: 0;
+		right: 10%;
+
+		& .slide_selectors { 
+			display: inline-block; 
+
+			& a {
+				color: $meinnovation-gray; 
+				margin: 0 1rem 0 0; 
+				cursor: pointer;
+				transition: font-size 0.5s ease;
+				font-size: 1.5rem;
+			}
+
+			& a.active {
+				color: $meinnovation-black;
+			}
+
+			& a:hover {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+#metadata { 
+	position: absolute; 
+	background-color: black;
+	border-radius: 1rem;
+	top: 20%; 
+	padding: 0 20px 0 20px; 
+	z-index: 9999; 
+	margin: 0 auto;
+	left: 28%;
+	text-align: center;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s; 
+	-o-transition: 1s; 
+	display: none;
+
+	& button { 
+		background-color: $meinnovation-black;
+		color: #212121; 
+		font-weight: bold; 
+		width: 50%; 
+		margin: 1rem auto;
+		padding: 10px 0; 
+		font-family: 'Orbitron', sans-serif; 
+		border: none; 
+		font-size: 24px; 
+		cursor: pointer; 
+		display: block;
+		border-radius: 0.3rem;
+		transition: width 0.5s ease;
+		box-shadow: 0 0 0.5rem #FFD740;
+	}
+
+	& button:hover { 
+		width: 60%;
+	}
+
+	& .metadata_button_wrap { 
+		text-align: center; 
+		margin: 2rem 0;
+
+	}
+
+	& .meta_wrap { 
+		margin: 0 auto;
+
+		& div { 
+			line-height: 30px;
+			padding: 0 0.5rem;
+		}
+		& .desc { margin-bottom: 10px; }
+	}
+
+	& .meta_close { 
+		position: absolute; 
+		right: 2%; 
+		top: 5%; 
+		padding-top: 15px; 
+		padding-right: 30px; 
+		font-size: 1.5rem; 
+		z-index: 1000; 
+		cursor: pointer; 
+		color: $meinnovation-black;
+		transition: font-size 0.5s ease;
+	}
+
+	& .meta_close:hover {
+		font-size:2rem;
+	}
+ 
+}
+
+.slide-hide, %slide-hide { 
+	-webkit-transition: 1s; 
+	-moz-transition: 1s; 
+	-o-transition: 1s; 
+	opacity: 0; 
+	width: 0; 
+}
+
+.slide-show { 
+	@extend %slide-hide;
+	opacity: 1; 
+	width: 70%; 
+}
+
+.gallery_hint {
+	position: absolute; 
+	background-color: black;
+	color: white;
+	border-radius: 1rem;
+	top: 5%; 
+	padding: 1rem 2rem; 
+	z-index: 9999; 
+	margin: 0 auto;
+	left: 37%;
+	text-align: center;
+	-webkit-transition: 1s; 
+	-moz-transition: 1s; 
+	-o-transition: 1s;
+	box-shadow: 0 0 1.5rem #FFD740;
+	display: none;
+}

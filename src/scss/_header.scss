@@ -10,41 +10,4 @@ header {
 	right: 0; 
 	left: 0; 
 	padding: 20px; 
-
-	@media screen and (max-height: 599px) {
-    	position: static;
-		padding-top: 1.5rem;
-	}
-}
-
-#contact_wrap { 
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding-top: 20px;
-    text-align: right;
-    padding-right: 0.7%;
-    width: 15%;
-    right: 0;
-    z-index: 9999;
-
-    @media screen and (max-height: 599px) {
-    	position: static;
-			padding-top: 0;
-			width: 100%;
-			text-align: center;
-			padding-right: 0;
-	}
-}
-
-.contact_icons {
-	color: $meinnovation-black;
-	font-size: 3em;
-	margin-right: 1rem;
-	cursor: pointer;
-
-	@media screen and (max-height: 599px) {
-		font-size: 2em;
-		margin-right: 0;
-	}
 }

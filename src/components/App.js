@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
-import Header from './Header';
 import Nav from './Nav';
 import About from './About';
-import Intro from './Intro';
-import Projects from './Projects';
+import Home from './Home';
+import Services from './Services';
 
 class App extends React.Component {
   render() {
     return(
       <div id="container">
-        <Header />
-        <Intro />
-        <Projects />
+        <Home />
         <About />
+        <Services />
         <Nav />
         <Footer />
       </div>
