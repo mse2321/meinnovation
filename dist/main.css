@@ -273,10 +273,10 @@ body {
   margin: 0;
   /* font-size: 62.5%; */ }
 
-#container {
+.container-fluid {
   width: 85%; }
   @media screen and (max-width: 599px) {
-    #container {
+    .container-fluid {
       width: 100%; } }
 
 section {
@@ -314,11 +314,9 @@ h3 {
 /* About */
 /* SASS declarations */
 .services_col_wrap {
-  width: 100%;
   text-align: center; }
   .services_col_wrap .services_col {
     vertical-align: top;
-    width: 33%;
     display: inline-block;
     padding: 3rem; }
     .services_col_wrap .services_col h3 {
@@ -350,3 +348,42 @@ h3 {
 
 .pitch_container {
   margin-top: 2rem; }
+
+/* SASS declarations */
+.contact_form {
+  border: 1px solid #FFD740;
+  padding: 2rem;
+  width: 40%;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #FFD740;
+  margin: 0 auto; }
+  .contact_form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem; }
+  .contact_form input[type="checkbox"] {
+    display: inline-block; }
+  .contact_form input, .contact_form textarea {
+    background-color: #BDBDBD;
+    border: none;
+    display: block;
+    border-radius: 0.2rem;
+    width: 50%;
+    padding: 0.5rem 0; }
+  .contact_form button {
+    background-color: #FFD740;
+    color: #212121;
+    font-weight: bold;
+    width: 35%;
+    margin: 1.5rem auto;
+    padding: 10px 0;
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    border-radius: 0.3rem;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 1rem #FFD740; }
+  .contact_form button:hover {
+    width: 45%; }

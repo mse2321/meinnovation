@@ -18,10 +18,10 @@ body {
 	background-color: black; 
 	color: white; 
 	margin: 0; 
-	/* font-size: 62.5%; */
+	font-size: 62.5%;
 }
 
-#container {
+.main_container {
 	width: 85%;
 
 	@media screen and (max-width: 599px) {
@@ -30,11 +30,17 @@ body {
 }
 
 section { 
-	padding-left: 2rem;
 	height: 100vh;
+	margin-bottom: 50vh;
+
+	@media screen and (max-width: 599px) {
+		width: 100%;
+	}
 }
 
-a { text-decoration: none; }
+a, a:active, a:focus, a:hover {
+	text-decoration: none;
+}
 
 li { list-style-type: none; }
 

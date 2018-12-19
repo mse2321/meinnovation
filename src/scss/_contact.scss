@@ -5,11 +5,15 @@ $meinnovation-ltgray: #BDBDBD;
 
 .contact_form {
 	border: 1px solid $meinnovation-black;
-	padding: 2rem;
-	width: 40%;
+	padding: 2rem 3rem;
+	width: 90%;
 	border-radius: 2rem;
 	box-shadow: 0 0 1rem #FFD740;
 	margin: 0 auto;
+
+	@media screen and (min-width: 1200px) {
+		width: 40%;
+	}
 
 	& label {
 		display: block;
@@ -26,15 +30,25 @@ $meinnovation-ltgray: #BDBDBD;
 		border: none;
 		display: block;
 		border-radius: 0.2rem;
-		width: 50%;
+		width: 100%;
 		padding: 0.5rem 0;
+		margin: 0 auto;
+
+		@media screen and (min-width: 1200px) {
+			margin: 0;
+		}
+
+	}
+
+	& textarea {
+		margin-bottom: 3rem;
 	}
 	
 	& button {
 		background-color: $meinnovation-black;
 		color: #212121; 
 		font-weight: bold; 
-		width: 35%; 
+		width: 60%; 
 		margin: 1.5rem auto;
 		padding: 10px 0; 
 		font-family: 'Orbitron', sans-serif; 
@@ -45,9 +59,17 @@ $meinnovation-ltgray: #BDBDBD;
 		border-radius: 0.3rem;
 		transition: width 0.5s ease;
 		box-shadow: 0 0 1rem #FFD740;
+
+		@media screen and (min-width: 1200px) {
+			width: 35%;
+		}
 	}
 
 	& button:hover {
-		width: 45%;
+		width: 70%;
+
+		@media screen and (min-width: 1200px) {
+			width: 45%;
+		}
 	}
 }
