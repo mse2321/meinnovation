@@ -10,6 +10,7 @@ $meinnovation-ltgray: #BDBDBD;
 	border-radius: 2rem;
 	box-shadow: 0 0 1rem #FFD740;
 	margin: 0 auto;
+	font-size: 1.2rem;
 
 	@media screen and (min-width: 1200px) {
 		width: 40%;
@@ -42,18 +43,19 @@ $meinnovation-ltgray: #BDBDBD;
 
 	& textarea {
 		margin-bottom: 3rem;
+		padding-left: 0.5rem;
 	}
 	
 	& button {
 		background-color: $meinnovation-black;
 		color: #212121; 
 		font-weight: bold; 
-		width: 60%; 
+		width: 70%; 
 		margin: 1.5rem auto;
-		padding: 10px 0; 
+		padding: 1rem; 
 		font-family: 'Orbitron', sans-serif; 
 		border: none; 
-		font-size: 24px; 
+		font-size: 1.3rem; 
 		cursor: pointer; 
 		display: block;
 		border-radius: 0.3rem;
@@ -66,7 +68,7 @@ $meinnovation-ltgray: #BDBDBD;
 	}
 
 	& button:hover {
-		width: 70%;
+		width: 80%;
 
 		@media screen and (min-width: 1200px) {
 			width: 45%;

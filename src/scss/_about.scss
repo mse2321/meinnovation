@@ -6,13 +6,24 @@ $meinnovation-gray: #616161;
 $meinnovation-ltgray: #BDBDBD;
 
 .about_col_wrap {
+	font-size: 1.2rem;
 
 	& .about_col {
 		vertical-align: top;
+
+		@media screen and (max-width: 599px) {
+			padding: 0 2rem;
+		}
+
 	}
 }
 
 .about_image_container {
+
+	@media screen and (max-width: 599px) {
+		text-align: center;
+		padding-bottom: 2rem;
+	}
 
 	.about_image {
 		width: 40%;
