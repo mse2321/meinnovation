@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
+import { FaTimes } from "react-icons/fa";
 
 class GalleryInfo extends Component {
+    constructor(props) {
+    super(props);
+
+    this.state = {
+      "display" : "displayNone"
+    }
+    this.hideModal = this.hideModal.bind(this);
+  }
+
+  hideModal(e) {
+    e.preventDefault();
+
+    this.setState({
+      "display" : "displayNone"
+    })
+
+  }
   render() {
     return (
-      <div id="metadata">
+      <div id="metadata" className={this.props.class}>
         <div className="meta_wrap">
           <div>
             <div className="art_title">
@@ -18,8 +36,8 @@ class GalleryInfo extends Component {
             <a href={this.props.link} target="_blank"><button>View Online</button></a>
             <a href={this.props.link2} target="_blank"><button className="gitLink">View in GitHub</button></a>
           </div>
-          <div className="meta_close">
-            <i className="fa fa-times" aria-hidden="true"></i>
+          <div className="meta_close" onClick={this.hideModal}>
+            <FaTimes />
           </div>
         </div>
       </div>     
