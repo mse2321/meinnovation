@@ -22,9 +22,7 @@ class Contact extends Component {
               </div>
               <div className="form-group">
                 <label>Anything else I need to know?</label>
-                <textarea className="form-control" name="details" rows="3">
-                  Additional Details
-                </textarea>
+                <textarea className="form-control" name="details" rows="3"></textarea>
               </div>
               <button type="button">Send Away!</button>
             </form>

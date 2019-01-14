@@ -19,7 +19,7 @@ class Services extends Component {
             </div>
             <div className="services_col col-md-12 col-lg-4 col-xl-4">
               <FaLaptop className="services_icons" />
-              <h3>Develop</h3>
+              <h3>Development</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Curabitur orci nunc, posuere ac sapien quis, porttitor maximus urna. 
@@ -28,7 +28,7 @@ class Services extends Component {
             </div>
             <div className="services_col col-md-12 col-lg-4 col-xl-4">
               <FaEnvelope className="services_icons" />
-              <h3>Deliver</h3>
+              <h3>Consulting</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Curabitur orci nunc, posuere ac sapien quis, porttitor maximus urna. 
