@@ -33,8 +33,8 @@ class GalleryInfo extends Component {
         </div>
         <div className="metadata_button_wrap">
           <div className="subdata subdata-link">
-            <a href={this.props.link} target="_blank"><button>View Online</button></a>
-            <a href={this.props.link2} target="_blank"><button className="gitLink">View in GitHub</button></a>
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer"><button>View Online</button></a>
+            <a href={this.props.link2} target="_blank" rel="noopener noreferrer"><button className="gitLink">View in GitHub</button></a>
           </div>
           <div className="meta_close" onClick={this.hideModal}>
             <FaTimes />

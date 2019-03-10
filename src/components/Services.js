@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaPencilAlt, FaLaptop, FaMap, FaEnvelope } from "react-icons/fa";
+import { FaPencilAlt, FaLaptop, FaEnvelope } from "react-icons/fa";
 
 class Services extends Component {
   render() {

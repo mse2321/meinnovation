@@ -93,16 +93,12 @@ aside {
 .intro_logo { 
 	width: 80%;
 	cursor: pointer;
-	transition: .5s ease;
 
 	@media screen and (max-width: 599px) {
 		display: none;
 	}
 }
 
-.intro_logo:hover {
-	width: 90%;
-}
 
 #contact_wrap {
 	position: absolute;
@@ -126,12 +122,7 @@ aside {
 	color: $meinnovation-black;
 	font-size: 3rem;
 	cursor: pointer;
-	transition: font-size 0.5s ease;
 	display: inline-block;
-}
-
-.contact_icons:hover {
-	font-size: 4rem;
 }
 
 .gitHubIcon {

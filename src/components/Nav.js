@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaHome, FaUser, FaConciergeBell, FaBookOpen, FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaHome, FaUser, FaConciergeBell, FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 
 class Nav extends Component {
   render() {
