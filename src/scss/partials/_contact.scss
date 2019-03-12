@@ -1,13 +1,14 @@
 @import "_variables.scss";
+@import "_global.scss";
 
 .contact_form {
-	border: 1px solid $meinnovation-primary;
-	padding: 4rem;
+	border: $base-unit / 10 solid $meinnovation-primary;
+	padding: $base-unit * 4;
 	width: 45%;
-	border-radius: 2rem;
-	box-shadow: 0 0 1rem #FFD740;
+	border-radius: $base-unit * 2;
+	box-shadow: 0 0 $base-unit #FFD740;
 	margin: 0 auto;
-	font-size: 1.5rem;
+	font-size: $base-unit * 1.5;
 
 	@include media-breakpoint-down(lg) {
 		width: 60%;
@@ -17,27 +18,24 @@
 	}
 
 	& .form-group {
-		margin-bottom: 2rem;
+		margin-bottom: $base-unit * 2;
 	}
 
 	& label {
 		display: block;
-		margin-top: 1rem;
-		margin-bottom: 0.3rem;
-	}
-
-	& input[type="checkbox"] {
-		display: inline-block;
+		margin-top: $base-unit;
+		margin-bottom: $base-unit * 0.3;
 	}
 
 	& input, textarea {
 		background-color: $meinnovation-highlight;
 		border: none;
 		display: block;
-		border-radius: 0.2rem;
+		border-radius: $base-unit * 0.2;
 		width: 100%;
-		padding: 0.5rem 0;
+		padding: $base-unit * 0.5 0;
 		margin: 0;
+		font-size: $base-unit * 1.5;
 
 		@include media-breakpoint-down(md) {
 			margin: 0 auto;
@@ -46,25 +44,13 @@
 	}
 
 	& textarea {
-		margin-bottom: 3rem;
-		padding-left: 0.5rem;
+		margin-bottom: $base-unit * 3;
+		padding-left: $base-unit * 0.5;
 	}
 	
 	& button {
-		background-color: $meinnovation-primary;
-		color: #212121; 
-		font-weight: bold; 
-		width: 50%; 
-		margin: 1.5rem auto;
-		padding: 1rem; 
-		font-family: 'Orbitron', sans-serif; 
-		border: none; 
-		font-size: 2rem; 
-		cursor: pointer; 
-		display: block;
-		border-radius: 0.3rem;
-		transition: width 0.5s ease;
-		box-shadow: 0 0 1rem #FFD740;
+		@extend %button;
+		width: 60%;
 
 		@include media-breakpoint-down(lg) {
 			width: 55%;
@@ -78,7 +64,7 @@
 	}
 
 	& button:hover {
-		width: 55%;
+		width: 65%;
 
 		@include media-breakpoint-down(lg) {
 			width: 60%;

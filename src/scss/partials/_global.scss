@@ -9,11 +9,11 @@
 }
 
 body { 
-	font-family: 'Quicksand', sans-serif; 
+	font-family: $font-family-body; 
 	background-color: $meinnovation-secondary; 
 	color: $white; 
 	margin: 0; 
-	font-size: 62.5%;
+	font-size: $font-size-body;
 }
 
 .main_container {
@@ -30,7 +30,7 @@ body {
 section { 
 	height: 100vh;
 	margin-bottom: 100vh;
-	padding-left: 3rem;
+	padding-left: $base-unit * 3;
 
 	@include media-breakpoint-down(md) {
 		width: 100%;
@@ -46,31 +46,48 @@ li { list-style-type: none; }
 
 h1, h2, h3, h4 { 
 	color: $white; 
-	font-family: 'Orbitron', sans-serif; 
+	font-family: $heading-font-family; 
 }
 
 h1 { 
 	font-size: 5rem; 
 	margin: 0;
-	text-shadow: 0 0 1.5rem #FFD740;
+	text-shadow: 0 0 $base-unit * 1.5 #FFD740;
 
 	@include media-breakpoint-down(md) {
-		font-size: 1rem;
+		font-size: $base-unit;
 	}
 }
 
 h2 { 
-	font-size: 4rem;
-	margin-bottom: 10rem;
+	font-size: $base-unit * 4;
+	margin-bottom: $base-unit * 10;
 
 	@include media-breakpoint-down(md) {
 		text-align: center;
-		margin-bottom: 5rem;
+		margin-bottom: $base-unit * 5;
 	}
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: $base-unit * 3;
+}
+
+.button, %button {
+	background-color: $meinnovation-primary;
+	color: #212121; 
+	font-weight: bold; 
+	width: 70%; 
+	margin: $base-unit * 1.5 auto;
+	padding: $base-unit 0; 
+	font-family: $heading-font-family; 
+	border: none; 
+	font-size: 24px; 
+	cursor: pointer; 
+	display: block;
+	border-radius: $base-unit * 0.3;
+	transition: width 0.5s ease;
+	box-shadow: 0 0 $base-unit #FFD740;
 }
 
 .active { color: $meinnovation-highlight; }

@@ -1,46 +1,39 @@
 @import "_variables.scss";
+@import "_global.scss";
+
+#services {
+	margin-bottom: $base-unit * 4;
+	height: initial;
+}
 
 .services_col_wrap {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: $base-unit * 1.5;
 
 	& .services_col {
 		vertical-align: top;
-		padding: 3rem;
+		padding: $base-unit * 3;
 
 		& h3 {
-			margin-top: 0.5rem;
-			margin-bottom: 2rem;
-			text-shadow: 0 0 1rem #FFD740;
+			margin-top: $base-unit * 0.5;
+			margin-bottom: $base-unit * 2;
+			text-shadow: 0 0 $base-unit #FFD740;
 		}
 		@include media-breakpoint-down(md) {
-			padding: 2rem 14rem;
+			padding: $base-unit * 2 $base-unit * 14;
 		}
 		@include media-breakpoint-down(sm) {
-			padding: 2rem 8rem;
+			padding: $base-unit * 2 $base-unit * 8;
 		}
 	}
 }
 
 .services_icons  {
-	font-size: 4rem;
+	font-size: $base-unit * 4;
 }
 
 .services_button {
-	background-color: $meinnovation-primary;
-	color: #212121; 
-	font-weight: bold; 
-	width: 70%; 
-	margin: 1.5rem auto;
-	padding: 1rem 0; 
-	font-family: 'Orbitron', sans-serif; 
-	border: none; 
-	font-size: 24px; 
-	cursor: pointer; 
-	display: block;
-	border-radius: 0.3rem;
-	transition: width 0.5s ease;
-	box-shadow: 0 0 1rem #FFD740;
+	@extend %button;
 
 	@include media-breakpoint-down(md) {
 		width: 80%;
@@ -49,7 +42,7 @@
 }
 
 .services_button:hover {
-	width: 40%;
+	width: 75%;
 
 	@include media-breakpoint-down(md) {
 		width: 85%;
@@ -57,5 +50,5 @@
 }
 
 .pitch_container {
-	margin: 2rem auto;
+	margin: $base-unit * 2 auto;
 }

@@ -1,10 +1,10 @@
 @import "_variables.scss";
 
 .about_col_wrap {
-	font-size: 1.7rem;
+	font-size: $base-unit * 1.7;
 
 	@include media-breakpoint-down(md) {
-		font-size: 1.5rem;
+		font-size: $base-unit * 1.5;
 	}
 
 	& .about_col {
@@ -14,7 +14,7 @@
 			padding: 0 8rem;
 		}
 		@include media-breakpoint-down(sm) {
-			padding: 0 6rem;
+			padding: 0 $base-unit * 6;
 		}
 
 	}
@@ -24,7 +24,7 @@
 
 	@include media-breakpoint-down(md) {
 		text-align: center;
-		padding-bottom: 2rem;
+		padding-bottom: $base-unit * 2;
 	}
 
 	.about_image {

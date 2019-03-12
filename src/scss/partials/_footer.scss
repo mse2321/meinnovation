@@ -1,6 +1,11 @@
 @import "_variables.scss";
 
 footer { 
+	font-size: $base-unit * 1.7;
 	text-align: center; 
-	padding-bottom: $base-spacing;
+	padding-bottom: $base-unit;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: $base-unit * 7;
+	}
 }
