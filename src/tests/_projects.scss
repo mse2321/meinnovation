@@ -1,22 +1,22 @@
 /* Projects */
 
 /* SASS declarations */
-$meinnovation-black: #FFD740;
+$meinnovation-primary: #FFD740;
 $meinnovation-gray: #616161;
-$meinnovation-ltgray: #BDBDBD;
+$meinnovation-highlight: #BDBDBD;
 
 .photos {
 	& img { 
 		width: 90%; 
 		cursor: pointer;
-		border-radius: 1rem; 
+		border-radius: 1rem; }
+
 		box-shadow: 0 0 0.5rem #FFD740;
 
 		@media screen and (min-width: 1200px) {
 			width: 60%;  
 		}
 	}
-}
 
 #gallery_wrap { 
 	text-align: center; 
@@ -44,7 +44,7 @@ $meinnovation-ltgray: #BDBDBD;
 			}
 
 			& a.active {
-				color: $meinnovation-black;
+				color: $meinnovation-primary;
 			}
 		}
 	}
@@ -127,7 +127,7 @@ $meinnovation-ltgray: #BDBDBD;
 	}
 
 	& button { 
-		background-color: $meinnovation-black;
+		background-color: $meinnovation-primary;
 		color: #212121; 
 		font-weight: bold; 
 		width: 90%; 
@@ -146,7 +146,7 @@ $meinnovation-ltgray: #BDBDBD;
 	}
 
 	& button:hover { 
-		background-color: white;
+		background-color: $$white;
 	}
 
 	& .metadata_button_wrap { 
@@ -169,13 +169,13 @@ $meinnovation-ltgray: #BDBDBD;
 		position: absolute; 
 		right: 0; 
 		top: 0; 
-		padding-top: 15px; 
+		padding-top: $base-spacing; 
 		padding-right: 30px; 
 		font-size: 30px; 
 		z-index: 1000; 
 		cursor: pointer; 
 		font-size: 30px; 
-		color: white; 
+		color: $$white; 
 
 		@media screen and (min-width: 1200px) {
 			display: none;

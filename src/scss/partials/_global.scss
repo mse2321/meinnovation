@@ -1,9 +1,4 @@
-
-/* SASS declarations */
-$meinnovation-black: #FFD740;
-$meinnovation-gray: #616161;
-$meinnovation-ltgray: #BDBDBD;
-
+@import "_variables.scss";
 
 /* General */
 
@@ -15,16 +10,19 @@ $meinnovation-ltgray: #BDBDBD;
 
 body { 
 	font-family: 'Quicksand', sans-serif; 
-	background-color: black; 
-	color: white; 
+	background-color: $meinnovation-secondary; 
+	color: $white; 
 	margin: 0; 
 	font-size: 62.5%;
 }
 
 .main_container {
-	width: 85%;
+	width: 84%;
 
-	@media screen and (max-width: 599px) {
+	@include media-breakpoint-down(lg) {
+		width: 80%;
+	}
+	@include media-breakpoint-down(md) {
 		width: 100%;
 	}
 }
@@ -32,9 +30,11 @@ body {
 section { 
 	height: 100vh;
 	margin-bottom: 100vh;
+	padding-left: 3rem;
 
-	@media screen and (max-width: 599px) {
+	@include media-breakpoint-down(md) {
 		width: 100%;
+		padding-left: 0;
 	}
 }
 
@@ -45,7 +45,7 @@ a, a:active, a:focus, a:hover {
 li { list-style-type: none; }
 
 h1, h2, h3, h4 { 
-	color: white; 
+	color: $white; 
 	font-family: 'Orbitron', sans-serif; 
 }
 
@@ -54,25 +54,26 @@ h1 {
 	margin: 0;
 	text-shadow: 0 0 1.5rem #FFD740;
 
-	@media screen and (max-width: 599px) {
+	@include media-breakpoint-down(md) {
 		font-size: 1rem;
 	}
 }
 
 h2 { 
-	font-size: 2.5rem; 
+	font-size: 4rem;
 	margin-bottom: 10rem;
 
-	@media screen and (max-width: 599px) {
+	@include media-breakpoint-down(md) {
 		text-align: center;
+		margin-bottom: 5rem;
 	}
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 3rem;
 }
 
-.active { color: $meinnovation-ltgray; }
+.active { color: $meinnovation-highlight; }
 
 .displayNone { display: none; }
 

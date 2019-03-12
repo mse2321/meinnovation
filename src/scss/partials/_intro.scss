@@ -1,0 +1,47 @@
+@import "_variables.scss";
+
+.intro_logo { 
+	width: 20%;
+}
+
+#intro_logo_wrap, #intro_wrap { text-align: center; }
+
+#intro_logo_wrap { 
+	& h1 {
+		font-size: 2.5rem;
+
+		@include media-breakpoint-down(md) {
+			font-size: 3rem;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 2rem;
+		}
+	}
+}
+
+#intro_wrap { 
+	margin-top: 1rem;
+	height: initial;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1rem;
+	display: none;
+
+	@include media-breakpoint-down(md) {
+		margin-top: 1rem; 
+		display: block;
+	}
+}
+
+#intro_data { 
+	padding: 40px; 
+	margin: 0 auto;
+	font-size: 1.5rem;
+
+	@include media-breakpoint-down(md) {
+		padding: 0;
+	} 
+	@include media-breakpoint-down(sm) {
+		font-size: 1rem;
+	}
+}
+

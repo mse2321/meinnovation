@@ -1,52 +1,55 @@
 /* Home */
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
-
-
-/* SASS declarations */
-$meinnovation-black: #FFD740;
-$meinnovation-gray: #616161;
-$meinnovation-ltgray: #BDBDBD;
+@import "_variables.scss";
 
 #projects {
 	margin: 0;
 	padding-left: 0;
 }
 
-.photos {
-	& img { 
+#gallery_wrap { 
+	text-align: center; 
+
+	& .image-gallery-slide {
+		background-color: $meinnovation-secondary
+	}
+
+	& .image-gallery-image { 
 		width: 100%;
 		height: 100%;
 		min-height: 100%;
 		opacity: 0.5;
 		cursor: pointer;
-	}
-}
 
-#gallery_wrap { 
-	text-align: center; 
+		@include media-breakpoint-down(md) {
+			margin: 0 auto;
+		}
+	}
 
 	& .image-gallery-bullets {
-		.image-gallery-bullet { 
-			color: $meinnovation-gray;
-			cursor: pointer;
-			transition: font-size 0.5s ease;
-			font-size: 6rem;
 
-			& .active {
-				color: $meinnovation-black;
-			}
+		.image-gallery-bullet { 
+			background-color: rgba(0,0,0,0.5);
+			border-color: $meinnovation-primary;
+			border-width: 0.2rem;
+			box-shadow: none;
+			cursor: pointer;
+			padding: 1rem;
 
 			& :hover {
-				font-size: 7rem;
-				color: $meinnovation-black;
+				background-color: $meinnovation-primary;
 			}
+		}
+
+		& .image-gallery-bullet.active {
+			background-color: $meinnovation-primary;
 		}
 	}
 }
 
 #metadata { 
 	position: absolute; 
-	background-color: black;
+	background-color: $meinnovation-secondary;
 	border-radius: 1rem;
 	top: 20%; 
 	padding: 0 20px 0 20px; 
@@ -59,7 +62,7 @@ $meinnovation-ltgray: #BDBDBD;
 	-o-transition: 1s; 
 
 	& button { 
-		background-color: $meinnovation-black;
+		background-color: $meinnovation-primary;
 		color: #212121; 
 		font-weight: bold; 
 		width: 50%; 
@@ -104,7 +107,7 @@ $meinnovation-ltgray: #BDBDBD;
 		font-size: 1.5rem; 
 		z-index: 1000; 
 		cursor: pointer; 
-		color: $meinnovation-black;
+		color: $meinnovation-primary;
 		transition: font-size 0.5s ease;
 	}
 
@@ -130,8 +133,8 @@ $meinnovation-ltgray: #BDBDBD;
 
 .gallery_hint {
 	position: absolute; 
-	background-color: black;
-	color: white;
+	background-color: $meinnovation-secondary;
+	color: $white;
 	border-radius: 1rem;
 	top: 5%; 
 	padding: 1rem 2rem; 

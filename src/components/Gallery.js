@@ -73,6 +73,7 @@ class Gallery extends Component {
 	            	showBullets={true} 
 	            	lazyLoad={true} 
 	            	showPlayButton={false}
+	            	showNav={false}
 	            	showFullscreenButton={false}
 	            	showThumbnails={false} />
 	            <GalleryInfo class={this.state.display} title={this.state.title} 

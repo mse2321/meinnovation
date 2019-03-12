@@ -12,7 +12,7 @@ class About extends Component {
                 <img className="about_image" src="images/marcusPhoto2018.jpg" alt="sample" />
               </div>
             </div>
-            <div className="about_col col-md-12 col-lg-4 col-xl-4">
+            <div className="about_col col-md-12 col-lg-6 col-xl-6">
               <div className="about_content">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci nunc, 

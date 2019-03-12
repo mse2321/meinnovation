@@ -5,8 +5,8 @@ class Nav extends Component {
   render() {
     return (
       <aside>
-        <div id="intro_logo_wrap">
-          <img className="intro_logo" src="images/meInnovationBulb_mid.svg" alt="ME Innovation Logo" />
+        <div id="nav_logo_wrap">
+          <img className="nav_logo" src="images/meInnovationBulb_mid.svg" alt="ME Innovation Logo" />
         </div>
         <nav>
           <ul className="nav_links">

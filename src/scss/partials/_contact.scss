@@ -1,0 +1,93 @@
+@import "_variables.scss";
+
+.contact_form {
+	border: 1px solid $meinnovation-primary;
+	padding: 4rem;
+	width: 45%;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem #FFD740;
+	margin: 0 auto;
+	font-size: 1.5rem;
+
+	@include media-breakpoint-down(lg) {
+		width: 60%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 80%;
+	}
+
+	& .form-group {
+		margin-bottom: 2rem;
+	}
+
+	& label {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 0.3rem;
+	}
+
+	& input[type="checkbox"] {
+		display: inline-block;
+	}
+
+	& input, textarea {
+		background-color: $meinnovation-highlight;
+		border: none;
+		display: block;
+		border-radius: 0.2rem;
+		width: 100%;
+		padding: 0.5rem 0;
+		margin: 0;
+
+		@include media-breakpoint-down(md) {
+			margin: 0 auto;
+		}
+
+	}
+
+	& textarea {
+		margin-bottom: 3rem;
+		padding-left: 0.5rem;
+	}
+	
+	& button {
+		background-color: $meinnovation-primary;
+		color: #212121; 
+		font-weight: bold; 
+		width: 50%; 
+		margin: 1.5rem auto;
+		padding: 1rem; 
+		font-family: 'Orbitron', sans-serif; 
+		border: none; 
+		font-size: 2rem; 
+		cursor: pointer; 
+		display: block;
+		border-radius: 0.3rem;
+		transition: width 0.5s ease;
+		box-shadow: 0 0 1rem #FFD740;
+
+		@include media-breakpoint-down(lg) {
+			width: 55%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 45%;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 75%;
+		}
+	}
+
+	& button:hover {
+		width: 55%;
+
+		@include media-breakpoint-down(lg) {
+			width: 60%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 50%;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 80%;
+		}
+	}
+}

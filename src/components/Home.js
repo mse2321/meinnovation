@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <section id="projects">
         <div id="main_wrap">
-          <Gallery />
+          	<Gallery />
         </div>
       </section>
     );

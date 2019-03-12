@@ -1,13 +1,8 @@
-/* About */
-
-/* SASS declarations */
-$meinnovation-black: #FFD740;
-$meinnovation-gray: #616161;
-$meinnovation-ltgray: #BDBDBD;
+@import "_variables.scss";
 
 .services_col_wrap {
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 
 	& .services_col {
 		vertical-align: top;
@@ -18,6 +13,12 @@ $meinnovation-ltgray: #BDBDBD;
 			margin-bottom: 2rem;
 			text-shadow: 0 0 1rem #FFD740;
 		}
+		@include media-breakpoint-down(md) {
+			padding: 2rem 14rem;
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 2rem 8rem;
+		}
 	}
 }
 
@@ -26,10 +27,10 @@ $meinnovation-ltgray: #BDBDBD;
 }
 
 .services_button {
-	background-color: $meinnovation-black;
+	background-color: $meinnovation-primary;
 	color: #212121; 
 	font-weight: bold; 
-	width: 90%; 
+	width: 70%; 
 	margin: 1.5rem auto;
 	padding: 1rem 0; 
 	font-family: 'Orbitron', sans-serif; 
@@ -41,10 +42,18 @@ $meinnovation-ltgray: #BDBDBD;
 	transition: width 0.5s ease;
 	box-shadow: 0 0 1rem #FFD740;
 
+	@include media-breakpoint-down(md) {
+		width: 80%;
+	}
+
 }
 
 .services_button:hover {
-	width: 100%;
+	width: 40%;
+
+	@include media-breakpoint-down(md) {
+		width: 85%;
+	}
 }
 
 .pitch_container {

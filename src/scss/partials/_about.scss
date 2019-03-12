@@ -1,0 +1,44 @@
+@import "_variables.scss";
+
+.about_col_wrap {
+	font-size: 1.7rem;
+
+	@include media-breakpoint-down(md) {
+		font-size: 1.5rem;
+	}
+
+	& .about_col {
+		vertical-align: top;
+
+		@include media-breakpoint-down(md) {
+			padding: 0 8rem;
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 0 6rem;
+		}
+
+	}
+}
+
+.about_image_container {
+
+	@include media-breakpoint-down(md) {
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+
+	.about_image {
+		width: 70%;
+		border-radius:5%;
+
+		@include media-breakpoint-down(lg) {
+			width: 80%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 30%;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 40%;
+		}
+	}	
+}
