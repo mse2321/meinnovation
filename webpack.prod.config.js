@@ -2,11 +2,11 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
-process.env.BABEL_ENV = "development";
-process.env.NODE_ENV = "development";
+process.env.BABEL_ENV = "production";
+process.env.NODE_ENV = "production";
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry:  ["./src/index.js", "./src/scss/main.scss"],
   watch: true,
   "module": {
@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader",
+          MiniCSSExtractPlugin.loader,
           "css-loader", 
           "sass-loader" 
         ],

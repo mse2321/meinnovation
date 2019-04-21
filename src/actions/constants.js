@@ -1,2 +1,2 @@
-const PREV_PROJECT = "PREV_PROJECT";
-const NEXT_PROJECT = "NEXT_PROJECT";
+export const SHOW_MODAL = "SHOW_MODAL";
+export const HIDE_MODAL = "HIDE_MODAL";

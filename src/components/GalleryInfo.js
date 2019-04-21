@@ -1,27 +1,18 @@
 import React, { Component } from 'react';
 import { FaTimes } from "react-icons/fa";
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 class GalleryInfo extends Component {
-    constructor(props) {
-    super(props);
 
-    this.state = {
-      "display" : "displayNone"
-    }
-    this.hideModal = this.hideModal.bind(this);
-  }
-
-  hideModal(e) {
+  hideTheModal(e) {
     e.preventDefault();
-
-    this.setState({
-      "display" : "displayNone"
-    })
-
+    this.props.hideModal();
   }
+
   render() {
     return (
-      <div id="metadata" className={this.props.class}>
+      <div id="metadata" className={this.props.display}>
         <div className="meta_wrap">
           <div>
             <div className="art_title">
@@ -36,7 +27,7 @@ class GalleryInfo extends Component {
             <a href={this.props.link} target="_blank" rel="noopener noreferrer"><button>View Online</button></a>
             <a href={this.props.link2} target="_blank" rel="noopener noreferrer"><button className="gitLink">View in GitHub</button></a>
           </div>
-          <div className="meta_close" onClick={this.hideModal}>
+          <div className="meta_close" onClick={ this.hideTheModal.bind(this) }>
             <FaTimes />
           </div>
         </div>
@@ -45,4 +36,16 @@ class GalleryInfo extends Component {
   }
 }
 
-export default GalleryInfo;
+var mapStateToProps = state => {
+  return {
+    display: state.display
+  };
+}
+
+var mapDispatchToProps = dispatch => {
+  return {
+    hideModal: () => dispatch(actions.hideModalAction())
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(GalleryInfo);

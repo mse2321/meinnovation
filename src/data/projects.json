@@ -5,7 +5,7 @@
 			"desc": "Table-top RPG experience calculator", 
 			"link": "http://www.meinnovation.net/xp-calculator/index.html", 
 			"link2":"https://github.com/mse2321/xp-calculator", 
-			"image": "images/sample-image4-min.jpg"
+			"image": "../images/sample-image4-min.jpg"
 		},
 		{
 			"title": "Countries & Capitals", 
@@ -13,7 +13,7 @@
 			"desc": "Angular API project to look up country data.", 
 			"link": "http://mse2321.github.io/countries_capitals/index.html#/", 
 			"link2":"https://github.com/mse2321/countries_capitals", 
-			"image": "images/sample-image1-min.jpg"
+			"image": "../images/sample-image1-min.jpg"
 		},
 		{	
 			"title": "Basketball Quiz", 
@@ -21,7 +21,7 @@
 			"desc": "Simple quiz app", 
 			"link": "http://mse2321.github.io/basketball-quiz/", 
 			"link2":"https://github.com/mse2321/basketball-quiz", 
-			"image": "images/sample-image3-min.jpg"
+			"image": "../images/sample-image3-min.jpg"
 		},
 		{
 			"title": "Muzak", 
@@ -29,6 +29,6 @@
 			"desc": "Song preview search engine w/ custom player",
 			"link": "http://mse2321.github.io/muzak/", 
 			"link2":"https://github.com/mse2321/muzak", 
-			"image": "images/sample-image2-min.jpg"
+			"image": "../images/sample-image2-min.jpg"
 		}
 ]

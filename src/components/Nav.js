@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { FaHome, FaUser, FaConciergeBell, FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa";
+import logo from '../images/meInnovationBulb_mid.svg';
+
 
 class Nav extends Component {
   render() {
     return (
       <aside>
         <div id="nav_logo_wrap">
-          <img className="nav_logo" src="images/meInnovationBulb_mid.svg" alt="ME Innovation Logo" />
+          <img className="nav_logo" src={ logo } alt="ME Innovation Logo" />
         </div>
         <nav>
           <ul className="nav_links">

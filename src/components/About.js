@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import myPhoto from '../images/marcusPhoto2018.jpg';
 
 class About extends Component {
   render() {
@@ -9,7 +10,7 @@ class About extends Component {
           <div className="about_col_wrap row">
             <div className="about_col col-md-12 col-lg-4 col-xl-4">
               <div className="about_image_container">
-                <img className="about_image" src="images/marcusPhoto2018.jpg" alt="sample" />
+                <img className="about_image" src={ myPhoto } alt="Marcus Eubanks" />
               </div>
             </div>
             <div className="about_col col-md-12 col-lg-6 col-xl-6">
