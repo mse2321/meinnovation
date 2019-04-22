@@ -27,6 +27,34 @@ class Gallery extends Component {
 
 		this.showTheModal = this.showTheModal.bind(this);
 	}
+
+	componentDidMount() {
+		const projects = data;
+		if (projects.length < 5) { 
+  			const itemElements = projects.map((project, index) => (
+	            <a key={index} href="sample" item={index} onClick={this.changeProject}>&#8226;</a>
+	        ));
+
+	        this.setState({
+				"items" : itemElements
+			});
+        }
+    }
+
+    changeProject(e) {
+	    e.preventDefault();
+	    const projects = data;
+	    let index = e.target.getAttribute("item");
+
+	    this.setState({
+			"title": projects[index].title,
+			"desc": projects[index].desc,
+			"link": projects[index].link,
+			"link2": projects[index].link2,
+			"image": projects[index].image
+		})
+
+	}
 	
 	showTheModal(e) {
 	    e.preventDefault();
@@ -69,15 +97,18 @@ class Gallery extends Component {
 
     	return (
 	 		<div id="gallery_wrap">
-	 			<ImageGallery items={images} 
-	 				onClick={ this.showTheModal }
-	            	showBullets={true} 
-	            	lazyLoad={true} 
-	            	showPlayButton={false}
-	            	showNav={false}
-	            	showIndex={true}
-	            	showFullscreenButton={false}
-	            	showThumbnails={false} />
+	 			 <div className="gallery">
+	              	<div className="photos">
+	            		<img id="gallery_image" className="slide-animation"
+	            			src={this.state.image} alt={this.props.title} onClick={this.showModal} />
+	            	</div>
+	        	</div>
+	            <div className="slide_selection">
+	                <div className="slide_selectors">
+	                  <a className="active" href="sample" onClick={this.changeProject}>&#8226;</a>
+	                </div>
+	                <div className="slide_selectors">{ this.state.items }</div>
+	            </div>
 	            <GalleryInfo className={this.props.display} title={this.state.title} 
 	            	desc={this.state.desc} link={this.state.link} link2={this.state.link2} />
 	        </div>    
