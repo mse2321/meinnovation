@@ -3,18 +3,19 @@
 
 .contact_form {
 	border: $base-unit / 10 solid $meinnovation-primary;
-	padding: $base-unit * 4;
-	width: 45%;
+	padding: $base-unit * 3;
+	width: 35%;
 	border-radius: $base-unit * 2;
 	box-shadow: 0 0 $base-unit #FFD740;
 	margin: 0 auto;
-	font-size: $base-unit * 1.5;
+	font-size: $base-unit * 1.2;
 
 	@include media-breakpoint-down(lg) {
 		width: 60%;
 	}
 	@include media-breakpoint-down(sm) {
-		width: 80%;
+		width: 85%;
+		padding: $base-unit * 2;
 	}
 
 	& .form-group {
@@ -59,7 +60,7 @@
 			width: 45%;
 		}
 		@include media-breakpoint-down(sm) {
-			width: 75%;
+			width: 80%;
 		}
 	}
 

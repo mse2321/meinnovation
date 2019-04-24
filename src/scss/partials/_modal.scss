@@ -9,10 +9,10 @@
 	font-size: $base-unit * 1.5;
 	top: 15%; 
 	padding: $base-unit * 4; 
-	width: 40%;
+	width: 35%;
 	z-index: 9999; 
 	margin: 0 auto;
-	left: 20%;
+	left: 24%;
 	text-align: center;
 
 	@include media-breakpoint-down(md) {

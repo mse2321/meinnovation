@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import GalleryInfo from './GalleryInfo';
 import data from '../data/projects.json';
 import * as actions from '../actions';
-import ImageGallery from 'react-image-gallery';
 import galleryImage1 from '../images/sample-image1-min.jpg';
 import galleryImage2 from '../images/sample-image2-min.jpg';
 import galleryImage3 from '../images/sample-image3-min.jpg';
@@ -21,11 +20,13 @@ class Gallery extends Component {
 			"desc" : projects[0].desc,
 			"link" : projects[0].link,
 			"link2" : projects[0].link2,
+			"images" : [ galleryImage4, galleryImage1, galleryImage3, galleryImage2 ],
 			"items" : [],
 			"isActive" : ""
 		};
 
 		this.showTheModal = this.showTheModal.bind(this);
+		this.changeProject = this.changeProject.bind(this);
 	}
 
 	componentDidMount() {
@@ -44,70 +45,38 @@ class Gallery extends Component {
     changeProject(e) {
 	    e.preventDefault();
 	    const projects = data;
-	    let index = e.target.getAttribute("item");
+	    let galleryIndex = e.target.getAttribute("item");
+	    console.log(galleryIndex);
 
 	    this.setState({
-			"title": projects[index].title,
-			"desc": projects[index].desc,
-			"link": projects[index].link,
-			"link2": projects[index].link2,
-			"image": projects[index].image
+	    	"index": galleryIndex,
+			"title": projects[galleryIndex].title,
+			"desc": projects[galleryIndex].desc,
+			"link": projects[galleryIndex].link,
+			"link2": projects[galleryIndex].link2,
+			"image": projects[galleryIndex].image
 		})
-
 	}
 	
 	showTheModal(e) {
 	    e.preventDefault();
-		var index;
-		const projects = data;
-	    
-	    if (this.state.index < 3) {
-	    	var index = this.state.index + 1;
-	    } else {
-	    	var index = 0;
-	    }
-
-	    this.setState({
-			"index": index,
-			"title" : projects[this.state.index].title,
-			"desc" : projects[this.state.index].desc,
-			"link" : projects[this.state.index].link,
-			"link2" : projects[this.state.index].link2,
-		});
-
 		this.props.showModal();
 	}
 
   	render() {
 
-	  	const images = [
-	      {
-	        original: galleryImage4
-	      },
-	      {
-	        original: galleryImage1
-	      },
-	      {
-	        original: galleryImage3
-	      },
-	      {
-	        original: galleryImage2
-	      }
-	    ]
-
     	return (
 	 		<div id="gallery_wrap">
 	 			 <div className="gallery">
 	              	<div className="photos">
-	            		<img id="gallery_image" className="slide-animation"
-	            			src={this.state.image} alt={this.props.title} onClick={this.showModal} />
+	            		<img className="gallery_image"
+	            			src={this.state.images[this.state.index]} alt={this.props.title} onClick={this.showTheModal} />
 	            	</div>
 	        	</div>
 	            <div className="slide_selection">
 	                <div className="slide_selectors">
-	                  <a className="active" href="sample" onClick={this.changeProject}>&#8226;</a>
+	                	{ this.state.items }
 	                </div>
-	                <div className="slide_selectors">{ this.state.items }</div>
 	            </div>
 	            <GalleryInfo className={this.props.display} title={this.state.title} 
 	            	desc={this.state.desc} link={this.state.link} link2={this.state.link2} />

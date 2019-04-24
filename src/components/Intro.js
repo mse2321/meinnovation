@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from '../images/meInnovationBulb_mid.svg';
 
 class Intro extends Component {
   render() {
@@ -6,7 +7,7 @@ class Intro extends Component {
       <section id="intro_wrap">
         <div id="intro_data">
           <div id="intro_logo_wrap">
-            <img className="intro_logo"  src="images/meinnovationBulb_only.svg"  alt="ME Innovation Logo" /> 
+            <img className="intro_logo"  src={ logo }  alt="ME Innovation Logo" /> 
             <h1>Marcus Eubanks: Innovation</h1>
           </div>
             <div id="welcome_wrap">

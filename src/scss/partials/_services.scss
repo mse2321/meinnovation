@@ -8,7 +8,7 @@
 
 .services_col_wrap {
 	text-align: center;
-	font-size: $base-unit * 1.5;
+	font-size: $base-unit * 1.2;
 
 	& .services_col {
 		vertical-align: top;
@@ -23,7 +23,7 @@
 			padding: $base-unit * 2 $base-unit * 14;
 		}
 		@include media-breakpoint-down(sm) {
-			padding: $base-unit * 2 $base-unit * 8;
+			padding: $base-unit * 2 $base-unit * 4;
 		}
 	}
 }
