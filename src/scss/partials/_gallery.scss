@@ -6,65 +6,65 @@
 		margin-top: $base-unit * 2;
 		padding: 0;
 	}
-}
 
-#gallery_wrap { 
-	text-align: center; 
-
-	@include media-breakpoint-down(md) {
-		padding: $base-unit;
-	}
-
-	& .slide_selection {
-		position: relative;
-		bottom: $base-unit * 8;
-		left: 0;
-		right: 0;
-		background-color: rgba(0,0,0,0.5);
-		z-index: 500;
-
+	#gallery_wrap { 
+		text-align: center; 
+	
 		@include media-breakpoint-down(md) {
-			bottom: 0;
-			background-color: transparent;
+			padding: $base-unit;
 		}
-	}
-
-	& .gallery_image { 
-		width: 100%;
-		opacity: 0.5;
-		cursor: pointer;
-
-		@include media-breakpoint-down(md) {
-			margin: 0 auto;
-		}
-	}
-
-	& .photos {
-		border: $base-unit * 0.2 solid $meinnovation-highlight;
-	}
-
-	& .slide_selectors {
-		li {
-			color: $meinnovation-highlight;
+	
+		& .gallery_image { 
+			width: 100%;
+			opacity: 0.5;
 			cursor: pointer;
-			padding: 0 $base-unit * 0.5;
-			font-size: $base-unit * 6;
-			line-height: 0.5;
-			display: inline-flex;
+	
+			@include media-breakpoint-down(md) {
+				margin: 0 auto;
+			}
 		}
-
-		li:hover, li:active, li.active { color: $meinnovation-primary; }
+	
+		& .photos {
+			border: $base-unit * 0.2 solid $meinnovation-highlight;
+		}
+	
+		& .slide_selection {
+			position: relative;
+			bottom: $base-unit * 8;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.5);
+			z-index: 500;
+	
+			@include media-breakpoint-down(md) {
+				bottom: 0;
+				background-color: transparent;
+			}
+		}
+	
+		& .slide_selectors {
+			li {
+				color: $meinnovation-highlight;
+				cursor: pointer;
+				padding: 0 $base-unit * 0.5;
+				font-size: $base-unit * 6;
+				line-height: 0.5;
+				display: inline-flex;
+			}
+	
+			li:hover, li:active, li.active { color: $meinnovation-primary; }
+		}
 	}
-}
-
-.slide-hide, %slide-hide { 
-	transition: 1s;
-	opacity: 0; 
-	width: 0; 
-}
-
-.slide-show { 
-	@extend %slide-hide;
-	opacity: 1; 
-	width: 70%; 
+	
+	.slide-hide, %slide-hide { 
+		transition: 1s;
+		opacity: 0; 
+		width: 0; 
+	}
+	
+	.slide-show { 
+		@extend %slide-hide;
+		opacity: 1; 
+		width: 70%; 
+	}
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from '../images/meInnovationBulb_mid.svg';
-
+import Header from './Header';
 
 const Nav = () => {
     return (
@@ -9,6 +9,7 @@ const Nav = () => {
         <div id="nav_logo_wrap">
           <img className="nav_logo" src={ logo } alt="ME Innovation Logo" />
         </div>
+        <Header />
         <nav id="contact_wrap" className="contact">
           <ul className='contact_links'>
             <li>

@@ -1,11 +1,13 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./partials/variables";
 @import "./partials/global";
+
 @import "./partials/about";
+@import "./partials/contact";
 @import "./partials/footer";
+@import "./partials/gallery";
+@import "./partials/gallery_modal";
+@import "./partials/header";
 @import "./partials/intro";
 @import "./partials/nav";
-@import "./partials/gallery";
-@import "./partials/contact";
-@import "./partials/gallery_modal";
 @import "./partials/skill_bars";

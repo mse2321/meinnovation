@@ -9,5 +9,6 @@ footer {
 	@include media-breakpoint-down(md) {
 		top: 100vh;
 		margin-top: 0;
+		margin-bottom: $base-unit * 5;
 	}
 }

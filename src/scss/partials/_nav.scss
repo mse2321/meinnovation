@@ -9,9 +9,7 @@ aside {
 	z-index: 500;
 	width: 15%;
 
-	@include media-breakpoint-down(lg) {
-		width: 19%;
-	}
+	@include media-breakpoint-down(lg) { width: 19%; }
 	@include media-breakpoint-down(md) {
 		padding: 0;
 		top: initial;
@@ -19,55 +17,56 @@ aside {
 		width: 100%;
 	}
 
-	#nav_logo_wrap {
-
-		@include media-breakpoint-down(md) {
-			display: none;
-		}
-	}
-}
-
-
-#contact_wrap {
-	position: relative;
-    bottom: $base-unit * 5.3;
-    z-index: 9999;
-    top: 50vh;
-
-	@include media-breakpoint-down(md) {
-		display: flex;
-		padding: 0;
-		margin: 0;
-		bottom: 0;
-	}
-
-	.contact_icons {
-		color: $meinnovation-primary;
-		font-size: $base-unit * 3;
-		cursor: pointer;
-		display: inline-block;
+	#contact_wrap {
+		position: relative;
+		bottom: $base-unit * 5.3;
+		z-index: 9999;
+		top: 37.5vh;
 	
-		@include media-breakpoint-down(lg) {
-			font-size: $base-unit * 3.5;
-		}
-	}
-
-	.contact_links, %nav_links { 
-		margin-top: $base-unit * 5;
-		text-align: center;
-		padding: 0;
-		margin-bottom: 0;
-
 		@include media-breakpoint-down(md) {
-			background-color:gray;
-			width: 100%;
-			padding: $base-unit 0;
+			display: flex;
+			top: 0;
+			padding: 0;
+			margin: 0;
+			bottom: 0;
 		}
 	
-		& li { 
-			display: inline-flex;
+		.contact_icons {
+			color: $meinnovation-primary;
 			cursor: pointer;
+			display: inline-block;
+			font-size: $base-unit * 3;
+		
+			@include media-breakpoint-down(lg) { font-size: $base-unit * 3.5; }
 		}
 	
+		.contact_links, %nav_links { 
+			margin-top: 0;
+			text-align: center;
+			padding: 0;
+	
+			@include media-breakpoint-down(md) {
+				background-color:gray;
+				width: 100%;
+				padding: $base-unit 0;
+				margin-bottom: 0;
+			}
+		
+			& li { 
+				cursor: pointer;
+				margin-bottom: $base-unit;
+	
+				@include media-breakpoint-down(md) {
+					display: inline-flex;
+					margin-bottom: 0;
+				}
+			}
+	
+	
+			.gitHubIcon { @include media-breakpoint-down(md) { margin: 0 $base-unit * 4; } }
+		
+		}
 	}
+
+	#nav_logo_wrap { @include media-breakpoint-down(md) { display: none; } }
 }

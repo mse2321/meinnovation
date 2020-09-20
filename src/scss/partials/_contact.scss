@@ -7,22 +7,31 @@
 	margin: 0 auto;
 	font-size: $base-unit * 1.2;
 
-	@include media-breakpoint-down(lg) {
-		width: 60%;
-	}
+	@include media-breakpoint-down(lg) { width: 60%; }
 	@include media-breakpoint-down(sm) {
 		width: 85%;
 		padding: $base-unit * 2;
 	}
 
-	& .form-group {
-		margin-bottom: $base-unit * 2;
+	& button {
+		@extend %button;
+		width: 60%;
+
+		@include media-breakpoint-down(lg) { width: 55%; }
+		@include media-breakpoint-down(md) { width: 45%; }
+		@include media-breakpoint-down(sm) { width: 80%; }
 	}
 
-	& label {
-		display: block;
-		margin-top: $base-unit;
-		margin-bottom: $base-unit * 0.3;
+	& button:hover {
+		width: 65%;
+
+		@include media-breakpoint-down(lg) { width: 60%; }
+		@include media-breakpoint-down(md) { width: 50%; }
+		@include media-breakpoint-down(sm) { width: 80%; }
+	}
+
+	& .form-group {
+		margin-bottom: $base-unit * 2;
 	}
 
 	& input, textarea {
@@ -35,43 +44,17 @@
 		margin: 0;
 		font-size: $base-unit * 1.5;
 
-		@include media-breakpoint-down(md) {
-			margin: 0 auto;
-		}
+		@include media-breakpoint-down(md) { margin: 0 auto;}
+	}
 
+	& label {
+		display: block;
+		margin-top: $base-unit;
+		margin-bottom: $base-unit * 0.3;
 	}
 
 	& textarea {
 		margin-bottom: $base-unit * 3;
 		padding-left: $base-unit * 0.5;
-	}
-	
-	& button {
-		@extend %button;
-		width: 60%;
-
-		@include media-breakpoint-down(lg) {
-			width: 55%;
-		}
-		@include media-breakpoint-down(md) {
-			width: 45%;
-		}
-		@include media-breakpoint-down(sm) {
-			width: 80%;
-		}
-	}
-
-	& button:hover {
-		width: 65%;
-
-		@include media-breakpoint-down(lg) {
-			width: 60%;
-		}
-		@include media-breakpoint-down(md) {
-			width: 50%;
-		}
-		@include media-breakpoint-down(sm) {
-			width: 80%;
-		}
 	}
 }
