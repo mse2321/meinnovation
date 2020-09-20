@@ -1,12 +1,9 @@
-@import "_variables.scss";
-@import "_global.scss";
-
 .contact_form {
 	border: $base-unit / 10 solid $meinnovation-primary;
 	padding: $base-unit * 3;
 	width: 35%;
 	border-radius: $base-unit * 2;
-	box-shadow: 0 0 $base-unit #FFD740;
+	box-shadow: 0 0 $base-unit $meinnovation-primary;
 	margin: 0 auto;
 	font-size: $base-unit * 1.2;
 

@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Footer extends Component {
-	constructor(props) {
-		super(props);
-		
-		let newDate = new Date()
-		let year = newDate.getFullYear();
+const Footer = () => {
+	const newDate = new Date()
+	const year = newDate.getFullYear();
+	const footerContent = 'ME Innovation Services';
 
-		this.state = {
-			"currentYear" : year
-		}
-	}
-  render() {
     return (
       <footer>
-        <p>&copy;{ this.state.currentYear } ME Innovation Services</p>
+        <p>&copy;{ year + ' ' + footerContent}</p>
       </footer>
     );
-  }
 }
 
 export default Footer;

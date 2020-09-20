@@ -1,0 +1,19 @@
+{
+    "content": [
+        {
+            "section_heading" : "Design",
+            "section_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elix.",
+            "section_icon": "FaPencilAlt"
+        },
+        {
+            "section_heading" : "Development",
+            "section_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elix.",
+            "section_icon": "FaLaptop"
+        },
+        {
+            "section_heading" : "Consulting",
+            "section_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elix.",
+            "section_icon": "FaEnvelope"
+        }
+    ]
+}

@@ -1,32 +1,24 @@
-@import "_variables.scss";
-@import "_global.scss";
-
 #metadata { 
-	position: absolute; 
+	position: fixed; 
 	background-color: $meinnovation-secondary;
 	border: $base-unit / 10 solid $meinnovation-highlight;
 	border-radius: $base-unit;
-	font-size: $base-unit * 1.5;
+	font-size: $base-unit * 1.2;
 	top: 15%; 
 	padding: $base-unit * 4; 
 	width: 35%;
 	z-index: 9999; 
 	margin: 0 auto;
-	left: 24%;
+	left: 25%;
 	text-align: center;
 
 	@include media-breakpoint-down(md) {
-		top: 20%;
-	}
-	@include media-breakpoint-down(md) {
-		width: 90%;
+		top: 5%;
 		left: 0;
-		margin: 0 $base-unit * 3.5;
-	}
-	@include media-breakpoint-down(sm) {
+		right: 0;
+		bottom: 5%;
+		margin: 0 auto;
 		width: 90%;
-		left: 0;
-		margin: 0 $base-unit * 2.5;
 	}
 
 	& h3 {
@@ -40,7 +32,9 @@
 
 	& button { 
 		@extend %button;
+		margin-bottom: $base-unit * 2;
 		width: 60%;
+		font-size: $base-unit * 1.5;
 
 		@include media-breakpoint-down(lg) {
 			width: 75%;

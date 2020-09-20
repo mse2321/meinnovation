@@ -1,26 +1,30 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Footer from './Footer';
 import Nav from './Nav';
-import About from './About';
+import About from './About/';
 import Home from './Home';
-import Services from './Services';
-import Contact from './Contact';
-import Intro from "./Intro";
+import MobileIntro from "./MobileIntro";
 
-class App extends React.Component {
-  render() {
+var mapStateToProps = state => {
+  return {
+    modalDisplay: state.modalDisplay
+  };
+}
+
+const App = (props) => {
     return(
       <div className="main_container">
-        <Intro />
+        {
+          props.modalDisplay ? <div className="disableBackground" /> : ''
+        }
+        <MobileIntro />
         <Home />
         <About />
-        <Services />
-        <Contact />
         <Nav />
         <Footer />
       </div>
     )
-  }
 }
 
-export default App;
+export default connect(mapStateToProps)(App);

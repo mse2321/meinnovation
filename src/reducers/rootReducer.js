@@ -1,15 +1,15 @@
 import * as actions from '../actions/constants';
  
 const initialState = {
-  display : "displayNone"
+  modalDisplay: false
 }
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.SHOW_MODAL:
-      return { ...state, display: "displayBlock" }
+      return { ...state, modalDisplay: true }
     case actions.HIDE_MODAL:
-      return { ...state, display: "displayNone" }
+      return { ...state, modalDisplay: false }
     default:
       return state
   }
