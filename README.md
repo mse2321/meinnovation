@@ -1,1 +1,0 @@
-This is the new ME Innovation portfolio site. Working on a refresh of the current site with React, Redux, Bootstrap, Sass, and Webpack to name some of the tech stack. Also look out for the upcoming ME Innovation Services Wordpress site, strictly catering to businesses.

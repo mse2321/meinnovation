@@ -19,12 +19,5 @@
 			"desc": "Simple quiz app", 
 			"link": "http://mse2321.github.io/basketball-quiz/", 
 			"link2":"https://github.com/mse2321/basketball-quiz"
-		},
-		{
-			"title": "Muzak", 
-			"tech": "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", 
-			"desc": "Song preview search engine w/ custom player",
-			"link": "http://mse2321.github.io/muzak/", 
-			"link2":"https://github.com/mse2321/muzak"
 		}
 ]

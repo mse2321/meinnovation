@@ -5,10 +5,9 @@ import projects from '../../data/projects.json';
 import galleryImage1 from '../../images/sample-image4-min.jpg';
 import galleryImage2 from '../../images/sample-image1-min.jpg';
 import galleryImage3 from '../../images/sample-image3-min.jpg';
-import galleryImage4 from '../../images/sample-image2-min.jpg';
 
 const Gallery = (props) => {
-	const images = [galleryImage1, galleryImage2, galleryImage3, galleryImage4]
+	const images = [galleryImage1, galleryImage2, galleryImage3]
 	const [itemIndex, setItemIndex] = useState(0);
 	
     const changeProject = (e) => {

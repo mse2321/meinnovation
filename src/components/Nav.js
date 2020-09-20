@@ -13,7 +13,7 @@ const Nav = () => {
         <nav id="contact_wrap" className="contact">
           <ul className='contact_links'>
             <li>
-              <a href="contact_page" target="_blank" rel="noopener noreferrer" className="contact_icon">
+              <a href="mailto:marcus@meinnovationservices.com?subject=Inquiry" target="_blank" rel="noopener noreferrer" className="contact_icon">
                 <FaEnvelopeSquare className="contact_icons" />
               </a>
             </li>

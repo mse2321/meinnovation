@@ -9,7 +9,7 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "webpack": "webpack | webpack-dev-server --open",
+    "webpack": "webpack",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "start": "react-scripts start"
