@@ -47,6 +47,13 @@ section {
 	padding: $base-unit * 7 0 0 $base-unit * 1;
 
 	@include media-breakpoint-down(md) {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+	}
+
+	@media (max-height: 300px) {
+		height: 100%;
 		width: 100%;
 		padding: 0;
 	}

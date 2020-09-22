@@ -3,7 +3,10 @@
 		margin-top: $base-unit * 7;
 		margin-bottom: $base-unit * 3;
 
-		@include media-breakpoint-down(md) { margin-bottom: $base-unit * 3; }
+		@include media-breakpoint-down(md) { 
+			margin-top: 0;
+			margin-bottom: $base-unit * 3; 
+		}
 	}
 
 	h3 {
@@ -39,15 +42,9 @@
 			width: 65%;
 			border-radius:5%;
 	
-			@include media-breakpoint-down(lg) {
-				width: 80%;
-			}
-			@include media-breakpoint-down(md) {
-				width: 30%;
-			}
-			@include media-breakpoint-down(sm) {
-				width: 60%;
-			}
+			@include media-breakpoint-down(lg) { width: 80%; }
+			@include media-breakpoint-down(md) { width: 30%; }
+			@include media-breakpoint-down(sm) { width: 60%; }
 		}	
 	}
 }

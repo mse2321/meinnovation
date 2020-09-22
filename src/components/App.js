@@ -13,13 +13,16 @@ var mapStateToProps = state => {
 }
 
 const App = (props) => {
+
     return(
       <div className="main_container">
         {
           props.modalDisplay ? <div className="disableBackground" /> : ''
         }
-        <MobileIntro />
-        <Home />
+        <div className="mobile_intro_container">
+          <MobileIntro />
+          <Home />
+        </div>
         <About />
         <Nav />
         <Footer />
