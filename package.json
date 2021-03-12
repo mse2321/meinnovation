@@ -35,7 +35,7 @@
     "lodash": "^4.17.11",
     "mini-css-extract-plugin": "0.4.3",
     "node-sass": "^4.10.0",
-    "react-dev-utils": "^6.1.1",
+    "react-dev-utils": "^11.0.4",
     "react-icons": "^3.2.2",
     "react-image-gallery": "^0.8.16",
     "react-redux": "^5.1.0",
