@@ -6,9 +6,10 @@ import galleryImage3 from '../../images/xpCalc.jpg';
 import galleryImage2 from '../../images/bballQuiz.jpg';
 import galleryImage1 from '../../images/muzak.jpg';
 
-const Gallery = (props) => {
+const Gallery = () => {
 	const images = [galleryImage1, galleryImage2, galleryImage3]
 	const [itemIndex, setItemIndex] = useState(0);
+	const [showModal, toggleModal] = useState(false);
 	
     const changeProject = (e) => {
 	    e.preventDefault();
@@ -19,7 +20,7 @@ const Gallery = (props) => {
 	
 	const showTheModal = (e) => {
 	    e.preventDefault();
-		props.showModal();
+		toggleModal(true);
 	}
 
     return (
@@ -38,8 +39,15 @@ const Gallery = (props) => {
 					}
 	            </ul>
 	        </div>
-	        <GalleryModal title={projects[itemIndex].title} 
-	            desc={projects[itemIndex].desc} link={projects[itemIndex].link} link2={projects[itemIndex].link2} />
+			{
+				showModal && 
+				<GalleryModal 
+					onClose={toggleModal}
+					title={projects[itemIndex].title} 
+					desc={projects[itemIndex].desc} 
+					link={projects[itemIndex].link} 
+					link2={projects[itemIndex].link2} />
+			}
 	    </div>    
     );
 }

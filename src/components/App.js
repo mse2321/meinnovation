@@ -1,24 +1,14 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Footer from './Footer';
 import Nav from './Nav';
 import About from './About/';
 import Home from './Home';
 import MobileIntro from "./MobileIntro";
 
-var mapStateToProps = state => {
-  return {
-    modalDisplay: state.modalDisplay
-  };
-}
-
-const App = (props) => {
+const App = () => {
 
     return(
       <div className="main_container">
-        {
-          props.modalDisplay ? <div className="disableBackground" /> : ''
-        }
         <div className="mobile_intro_container">
           <MobileIntro />
           <Home />
@@ -30,4 +20,4 @@ const App = (props) => {
     )
 }
 
-export default connect(mapStateToProps)(App);
+export default App;

@@ -8,11 +8,11 @@ const GalleryInfo = (props) => {
 
   const hideTheModal = (e) => {
     e.preventDefault();
-    props.hideModal();
+    props.onClose(false);
   }
 
     return (
-      <div id="metadata" className={props.modalDisplay ? 'displayBlock' : 'displayNone'}>
+      <div id="metadata">
         <div className="meta_wrap">
           <div>
             <div className="art_title">
