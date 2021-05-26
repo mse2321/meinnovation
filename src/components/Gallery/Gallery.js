@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import GalleryModal from './GalleryModal/';
 import Selector from './Selector/';
 import projects from '../../data/projects.json';
-import galleryImage1 from '../../images/sample-image4-min.jpg';
-import galleryImage2 from '../../images/sample-image1-min.jpg';
-import galleryImage3 from '../../images/sample-image3-min.jpg';
+import galleryImage3 from '../../images/xpCalc.jpg';
+import galleryImage2 from '../../images/bballQuiz.jpg';
+import galleryImage1 from '../../images/muzak.jpg';
 
 const Gallery = (props) => {
 	const images = [galleryImage1, galleryImage2, galleryImage3]

@@ -1,9 +1,8 @@
 import React from 'react';
 import myPhoto from '../../images/marcusPhoto2018.jpg';
 import aboutContent from '../../data/aboutContent.json';
-import SkillBar from '../SkillBar/';
 
-const About = (props) => {
+const About = () => {
     return (
       <section id="about">
         <div className="about_wrap container-fluid">
@@ -19,14 +18,6 @@ const About = (props) => {
                 {
                   (aboutContent.content.section_content).map((content, index) => (
                     <p key={index}>{content}</p>
-                  ))
-                }
-              </div>
-              <div className="skills_container">
-                <h3>Skills Breakdown</h3>
-                {
-                  aboutContent.skills.map((skill, index) => (
-                    <SkillBar key={index} score={skill.score} skillName={skill.name} />
                   ))
                 }
               </div>

@@ -1,23 +1,23 @@
 [
 		{
-			"title": "XP Calculator", 
-			"tech": "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", 
-			"desc": "Table-top RPG experience calculator", 
-			"link": "http://www.meinnovation.net/xp-calculator/index.html", 
-			"link2":"https://github.com/mse2321/xp-calculator"
-		},
-		{
-			"title": "Countries & Capitals", 
-			"tech": "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", 
-			"desc": "Angular API project to look up country data.", 
-			"link": "http://mse2321.github.io/countries_capitals/index.html#/", 
-			"link2":"https://github.com/mse2321/countries_capitals"
+			"title": "Muzak", 
+			"tech": "HTML5, CSS3, Sass, React, React-Bootstrap, Typescript, Spotfiy, Discogs, GitHub Actions", 
+			"desc": "React TypeScript Project using Spotify and Discogs APIs.", 
+			"link": "https://mse2321.github.io/muzak_new/", 
+			"link2":"https://github.com/mse2321/muzak_new"
 		},
 		{	
 			"title": "Basketball Quiz", 
-			"tech": "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", 
-			"desc": "Simple quiz app", 
+			"tech": "HTML5, CSS3, Sass, React, React-Bootstrap, AWS (coming soon)", 
+			"desc": "A basketball quiz app build with React", 
 			"link": "http://mse2321.github.io/basketball-quiz/", 
 			"link2":"https://github.com/mse2321/basketball-quiz"
+		},
+		{
+			"title": "XP Calculator", 
+			"tech": "HTML5, CSS3, Sass, React, Material-Ui", 
+			"desc": "Table-top RPG experience calculator", 
+			"link": "http://www.meinnovation.net/xp-calculator/index.html", 
+			"link2":"https://github.com/mse2321/xp-calculator"
 		}
 ]
