@@ -42,22 +42,7 @@ h3 { font-size: $base-unit * 2; }
 
 li { list-style-type: none; }
 
-section { 
-	height: 100vh;
-	padding: $base-unit * 7 0 0 $base-unit * 1;
-
-	@include media-breakpoint-down(md) {
-		height: 100%;
-		width: 100%;
-		padding: 0;
-	}
-
-	@media (max-height: 300px) {
-		height: 100%;
-		width: 100%;
-		padding: 0;
-	}
-}
+section { padding-left: $base-unit * 4; }
 
 .active { color: $meinnovation-highlight; }
 
@@ -66,7 +51,6 @@ section {
 	color: $meinnovation-secondary; 
 	font-weight: bold; 
 	width: 70%; 
-	margin: 0 auto;
 	padding: $base-unit 0; 
 	font-family: $heading-font-family; 
 	border: none; 
@@ -77,19 +61,6 @@ section {
 	transition: width 0.5s ease;
 	box-shadow: 0 0 $base-unit $meinnovation-primary;
 }
-
-.disableBackground { 
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.9); 
-	z-index: 700;
-}
-
-.displayBlock { display: block; }
-.displayNone  { display: none;  }
 
 .main_container {
 	width: 84%;

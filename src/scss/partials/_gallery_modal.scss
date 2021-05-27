@@ -1,16 +1,9 @@
 #metadata { 
-	position: fixed; 
 	background-color: $meinnovation-secondary;
-	border: $base-unit / 10 solid $meinnovation-highlight;
 	border-radius: $base-unit;
 	font-size: $base-unit * 1.2;
-	top: 15%; 
 	padding: $base-unit * 4; 
-	width: 35%;
 	z-index: 9999; 
-	margin: 0 auto;
-	left: 25%;
-	text-align: center;
 
 	@include media-breakpoint-down(md) {
 		top: 5%;
@@ -30,15 +23,15 @@
 	& button { 
 		@extend %button;
 		margin-bottom: $base-unit * 2;
-		width: 60%;
-		font-size: $base-unit * 1.5;
+		width: 50%;
+		font-size: $base-unit * 1.1;
 
 		@include media-breakpoint-down(lg) { width: 80%; }
 		@include media-breakpoint-down(md) { width: 90%; }
 	}
 
 	& button:hover { 
-		width: 65%;
+		width: 55%;
 
 		@include media-breakpoint-down(lg) { width: 85%; }
 		@include media-breakpoint-down(md) { width: 90%; }
@@ -46,28 +39,6 @@
 
 	& .metadata_button_wrap { 
 		text-align: center;
-	}
-
-	& .meta_close { 
-		position: absolute; 
-		right: 3%; 
-		top: 3%;   
-		font-size: $base-unit * 2; 
-		z-index: 1000; 
-		cursor: pointer; 
-		color: $meinnovation-primary;
-		transition: font-size 0.5s ease;
-
-		@include media-breakpoint-down(md) { 
-			font-size: $base-unit * 2.5; 
-			top: 0;
-		}
-	}
-
-	& .meta_close:hover {
-		font-size: $base-unit * 2.5;
-
-		@include media-breakpoint-down(md) { font-size: $base-unit * 3; }
 	}
 	
 	& .meta_wrap { 
@@ -77,7 +48,7 @@
 
 		& div { 
 			line-height: $base-unit * 2;
-			padding: 0 $base-unit * 0.5;
+			padding: 0;
 		}
 		& .desc { 
 			margin-bottom: $base-unit * 4; 

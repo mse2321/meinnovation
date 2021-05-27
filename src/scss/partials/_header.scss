@@ -1,3 +1,14 @@
 header#intro { 
 	h1 { @include media-breakpoint-down(md) { display: none; } }
 }
+
+.contact_icons {
+	color: $meinnovation-primary;
+	cursor: pointer;
+	display: inline-block;
+	font-size: $base-unit * 3;
+
+	@include media-breakpoint-down(lg) { font-size: $base-unit * 3.5; }
+}
+
+.gitHubIcon { @include media-breakpoint-down(md) { margin: 0 $base-unit * 4; } }
