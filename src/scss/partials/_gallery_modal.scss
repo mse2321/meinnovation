@@ -4,6 +4,7 @@
 	font-size: $base-unit * 1.2;
 	padding: $base-unit * 4; 
 	z-index: 9999; 
+	display: none;
 
 	@include media-breakpoint-down(md) {
 		top: 5%;

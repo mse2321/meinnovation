@@ -1,14 +1,49 @@
 header#intro { 
-	h1 { @include media-breakpoint-down(md) { display: none; } }
+	padding: $base-unit 0 0 $base-unit;
+
+	h1 { 
+		font-size: $base-unit * 3;
+		letter-spacing: $base-unit * 1.5;
+		display: flex;
+		margin-left: $base-unit * 1.5;
+
+		@include media-breakpoint-down(md) { display: none; }
+
+		div { padding-top: $base-unit * 2.5; }
+
+		.heading1 { 
+			color: $meinnovation-primary;
+			text-shadow: 0 0 $base-unit $meinnovation-primary; 
+		}
+
+		.heading2 { 
+			color: $meinnovation-highlight;
+			text-shadow: 0 0 $base-unit $meinnovation-highlight; 
+		}
+	}
+
+	#nav_logo_wrap { 
+		display: flex;
+		width: 5%;
+	}
+
+	li 	{ display: inline-block; }
 }
 
-.contact_icons {
-	color: $meinnovation-primary;
-	cursor: pointer;
-	display: inline-block;
-	font-size: $base-unit * 3;
+#contact_wrap {
+	padding-top: $base-unit * 2;
 
-	@include media-breakpoint-down(lg) { font-size: $base-unit * 3.5; }
+	.contact_icons {
+		color: $meinnovation-primary;
+		cursor: pointer;
+		font-size: $base-unit * 3;
+		margin-right: $base-unit;
+	
+		@include media-breakpoint-down(lg) { font-size: $base-unit * 3.5; }
+
+		&:hover { color: $meinnovation-highlight; }
+	}
+	
+	.gitHubIcon { @include media-breakpoint-down(md) { margin: 0 $base-unit * 4; } }
 }
 
-.gitHubIcon { @include media-breakpoint-down(md) { margin: 0 $base-unit * 4; } }

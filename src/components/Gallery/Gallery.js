@@ -10,6 +10,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Gallery = () => {
 	const images = [galleryImage1, galleryImage2, galleryImage3]
 	const [itemIndex, setItemIndex] = useState(0);
+	const [showModal, toggleModal] = useState(false);
 	
     const changeProject = (e) => {
 	    e.preventDefault();
@@ -17,14 +18,20 @@ const Gallery = () => {
 
 		setItemIndex(galleryIndex)
 	}
+
+	const showTheModal = () => {
+		showTheModal(true);
+	}
 	
     return (
 	 	<Container fluid id="gallery_wrap">
 			<Row id="content_wrap">
-				<Col xs={12} md={7} lg={7} xl={8}>
+				<Col>
 					<div className="gallery">
 						<div className="photos">
-							<img className="gallery_image" src={images[itemIndex]} alt={projects[itemIndex].title} onClick={(e) => showTheModal(e)} />
+							<img className="gallery_image" src={images[0]} alt={projects[itemIndex].title} />
+							<img className="gallery_image" src={images[1]} alt={projects[itemIndex].title} />
+							<img className="gallery_image" src={images[2]} alt={projects[itemIndex].title} />
 						</div>
 					</div>
 					<div className="slide_selection">
@@ -37,13 +44,15 @@ const Gallery = () => {
 						</ul>
 					</div>
 				</Col>
-				<Col xs={12} md={7} lg={7} xl={4}>
-					<GalleryModal 
-						title={projects[itemIndex].title} 
-						desc={projects[itemIndex].desc} 
-						link={projects[itemIndex].link} 
-						link2={projects[itemIndex].link2} />
-				</Col>
+				{
+					showModal && <Col>
+						<GalleryModal 
+							title={projects[itemIndex].title} 
+							desc={projects[itemIndex].desc} 
+							link={projects[itemIndex].link} 
+							link2={projects[itemIndex].link2} />
+					</Col>
+				}
 			</Row>
 	    </Container>    
     );

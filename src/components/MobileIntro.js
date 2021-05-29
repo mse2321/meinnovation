@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/meInnovationBulb_mid.svg';
+import logo from '../images/mei_updated_main.svg';
 
 const MobileIntro = () => {
   const heading = 'Marcus Eubanks: Innovation';

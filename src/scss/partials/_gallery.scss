@@ -8,15 +8,16 @@
 	}
 
 	#gallery_wrap { 
-	
 		@include media-breakpoint-down(md) {
 			padding: $base-unit;
 		}
 	
 		& .gallery_image { 
-			width: 100%;
-			opacity: 0.5;
+			width: 25%;
 			cursor: pointer;
+			display: inline;
+			margin-right: $base-unit * 4;
+			box-shadow: 0 0 $base-unit white; 
 	
 			@include media-breakpoint-down(md) {
 				margin: 0 auto;
@@ -27,6 +28,7 @@
 			bottom: $base-unit * 8;
 			background-color: rgba(0,0,0,0.5);
 			z-index: 500;
+			display: none;
 	
 			@include media-breakpoint-down(md) {
 				bottom: 0;

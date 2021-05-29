@@ -19,15 +19,6 @@ h1, h2, h3, h4 {
 	font-family: $heading-font-family; 
 }
 
-h1 { 
-	font-size: $base-unit * 1.5; 
-	text-align: center;
-	margin: 0;
-	text-shadow: 0 0 $base-unit * 1.5 $meinnovation-primary;
-
-	@include media-breakpoint-down(md) { font-size: $base-unit; }
-}
-
 h2 { 
 	font-size: $base-unit * 3;
 	margin-bottom: $base-unit * 10;
@@ -52,7 +43,7 @@ section { padding-left: $base-unit * 4; }
 	font-weight: bold; 
 	width: 70%; 
 	padding: $base-unit 0; 
-	font-family: $heading-font-family; 
+	font-family: $font-family-body; 
 	border: none; 
 	font-size: $base-unit * 2.4; 
 	cursor: pointer; 
@@ -60,15 +51,4 @@ section { padding-left: $base-unit * 4; }
 	border-radius: $base-unit * 0.3;
 	transition: width 0.5s ease;
 	box-shadow: 0 0 $base-unit $meinnovation-primary;
-}
-
-.main_container {
-	width: 84%;
-
-	@include media-breakpoint-down(lg) {
-		width: 80%;
-	}
-	@include media-breakpoint-down(md) {
-		width: 100%;
-	}
 }
