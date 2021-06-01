@@ -7,7 +7,6 @@
 	margin: 0 auto;
 	font-size: $base-unit * 1.2;
 
-	@include media-breakpoint-down(lg) { width: 60%; }
 	@include media-breakpoint-down(sm) {
 		width: 85%;
 		padding: $base-unit * 2;
@@ -17,22 +16,16 @@
 		@extend %button;
 		width: 60%;
 
-		@include media-breakpoint-down(lg) { width: 55%; }
-		@include media-breakpoint-down(md) { width: 45%; }
-		@include media-breakpoint-down(sm) { width: 80%; }
+		@include media-breakpoint-down(sm) 	{ width: 80%; }
 	}
 
 	& button:hover {
 		width: 65%;
 
-		@include media-breakpoint-down(lg) { width: 60%; }
-		@include media-breakpoint-down(md) { width: 50%; }
-		@include media-breakpoint-down(sm) { width: 80%; }
+		@include media-breakpoint-down(sm) 	{ width: 80%; }
 	}
 
-	& .form-group {
-		margin-bottom: $base-unit * 2;
-	}
+	& .form-group 							{ margin-bottom: $base-unit * 2; }
 
 	& input, textarea {
 		background-color: $meinnovation-highlight;
@@ -44,7 +37,7 @@
 		margin: 0;
 		font-size: $base-unit * 1.5;
 
-		@include media-breakpoint-down(md) { margin: 0 auto;}
+		@include media-breakpoint-down(sm) 	{ margin: 0 auto; }
 	}
 
 	& label {

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/mei_updated_main.svg';
+import logo from '../images/mei_logo.svg';
 import { FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -8,7 +8,7 @@ const Header = () => {
     <header id="intro">
       <Container fluid id="nav_wrap">
         <Row>
-          <Col xl={10} className="d-flex brand_wrap">
+          <Col xs={12} md={10} lg={10} xl={10} className="brand_wrap">
             <div id="nav_logo_wrap">
                 <img className="nav_logo" src={ logo } alt="ME Innovation Logo" />
             </div>
@@ -19,7 +19,7 @@ const Header = () => {
               </div>
             </h1>
           </Col>
-          <Col className="d-flex flex-row-reverse">
+          <Col xs={12} md={2} lg={2} xl={2} className="flex-row-reverse contact_container">
             <nav id="contact_wrap" className="contact">
               <ul className='contact_links'>
                 <li>

@@ -1,61 +1,75 @@
 #metadata { 
-	background-color: $meinnovation-secondary;
-	border-radius: $base-unit;
+	background-color: $meinnovation-highlight;
 	font-size: $base-unit * 1.2;
-	padding: $base-unit * 4; 
-	z-index: 9999; 
-	display: none;
+	padding: $base-unit * 1.6; 
+	z-index: 8000; 
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	bottom: 0;
+	// apply a teal gradient
 
-	@include media-breakpoint-down(md) {
-		top: 5%;
-		left: 0;
-		right: 0;
-		bottom: 5%;
-		margin: 0 auto;
-		width: 90%;
-		padding: $base-unit * 2
+	@include media-breakpoint-down(sm) {
+		padding: $base-unit;
 	}
 
 	& h3 {
-		@include media-breakpoint-down(md) { font-size: $base-unit * 3;   }
-		@include media-breakpoint-down(sm) { font-size: $base-unit * 2.5; }
+		@include media-breakpoint-down(sm) 		{ font-size: $base-unit * 2; }
 	}
 
 	& button { 
 		@extend %button;
+		display: inline-block;
+		margin-right: $base-unit * 2;
 		margin-bottom: $base-unit * 2;
-		width: 50%;
+		width: 30%;
 		font-size: $base-unit * 1.1;
+		color: white;
 
-		@include media-breakpoint-down(lg) { width: 80%; }
-		@include media-breakpoint-down(md) { width: 90%; }
+		@include media-breakpoint-down(sm) 		{ width: 40%; }
 	}
 
 	& button:hover { 
-		width: 55%;
+		width: 35%;
 
-		@include media-breakpoint-down(lg) { width: 85%; }
-		@include media-breakpoint-down(md) { width: 90%; }
-	}
-
-	& .metadata_button_wrap { 
-		text-align: center;
+		@include media-breakpoint-down(sm) 		{ width: 43%; }
 	}
 	
 	& .meta_wrap { 
 		margin: 0 auto;
 
-		@include media-breakpoint-down(md) { margin-top: $base-unit * 2; }
+		@include media-breakpoint-down(sm) 		{ margin-top: $base-unit; }
 
 		& div { 
 			line-height: $base-unit * 2;
 			padding: 0;
 		}
 		& .desc { 
-			margin-bottom: $base-unit * 4; 
+			margin-bottom: $base-unit * 2.5; 
 
-			@include media-breakpoint-down(md) { margin-bottom: $base-unit * 2; }
+			@include media-breakpoint-down(sm) 	{ margin-bottom: $base-unit * 2; }
 		}
+	}
+
+	.close {
+		background: none;
+		border: none;
+		box-shadow: none;
+		width: $base-unit * 1.2;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: $base-unit * 2;
+		color: $meinnovation-primary;
+		text-shadow: none;
+
+		&:hover 								{ width: $base-unit * 1.2; }
+	}
+
+	.subdata {
+		font-size: $base-unit;
 	}
  
 }

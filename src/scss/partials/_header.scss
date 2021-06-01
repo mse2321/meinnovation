@@ -1,15 +1,27 @@
 header#intro { 
 	padding: $base-unit 0 0 $base-unit;
 
+	@include media-breakpoint-down(sm) 			{ padding: 0; }
+
 	h1 { 
 		font-size: $base-unit * 3;
 		letter-spacing: $base-unit * 1.5;
 		display: flex;
 		margin-left: $base-unit * 1.5;
 
-		@include media-breakpoint-down(md) { display: none; }
+		@include media-breakpoint-down(sm) { 
+			font-size: $base-unit;
+			letter-spacing: $base-unit * 1;
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
 
-		div { padding-top: $base-unit * 2.5; }
+		div { 
+			padding-top: $base-unit * 2.5; 
+
+			@include media-breakpoint-down(sm) { padding-top: $base-unit;}
+		}
 
 		.heading1 { 
 			color: $meinnovation-primary;
@@ -25,13 +37,32 @@ header#intro {
 	#nav_logo_wrap { 
 		display: flex;
 		width: 5%;
+
+		@include media-breakpoint-down(sm) { 
+			padding-top: $base-unit;
+			width: 15%;
+			margin: 0 auto;
+		}
+
 	}
 
-	li 	{ display: inline-block; }
+	li 											{ display: inline-block; }
 }
 
 #contact_wrap {
 	padding-top: $base-unit * 2;
+
+	@include media-breakpoint-down(sm) { 
+		margin: 0 auto; 
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-bottom: $base-unit;
+		padding-top: $base-unit;
+		z-index: 9000;
+		background-color: black;
+	}
 
 	.contact_icons {
 		color: $meinnovation-primary;
@@ -39,11 +70,24 @@ header#intro {
 		font-size: $base-unit * 3;
 		margin-right: $base-unit;
 	
-		@include media-breakpoint-down(lg) { font-size: $base-unit * 3.5; }
+		@include media-breakpoint-down(sm) 		{ font-size: $base-unit * 3.5; }
 
-		&:hover { color: $meinnovation-highlight; }
+		&:hover 								{ color: $meinnovation-highlight; }
 	}
 	
-	.gitHubIcon { @include media-breakpoint-down(md) { margin: 0 $base-unit * 4; } }
+	.gitHubIcon 								{ @include media-breakpoint-down(sm) { margin: 0 $base-unit * 4; } }
+
+	.contact_links 								{ margin-bottom: 0; }
 }
 
+.contact_container { 
+	display: flex;
+
+	@include media-breakpoint-down(sm) 			{ text-align: center; } 
+}
+
+.brand_wrap {
+	display: flex;
+
+	@include media-breakpoint-down(sm) 			{ display: block; }
+}

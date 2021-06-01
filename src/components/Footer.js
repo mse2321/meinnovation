@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
 	const newDate = new Date()
 	const year = newDate.getFullYear();
-	const footerContent = 'ME InnovationServices';
+	const footerContent = 'ME Innovations';
 
     return (
       <footer>

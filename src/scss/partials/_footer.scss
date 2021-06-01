@@ -2,13 +2,14 @@ footer {
 	font-size: $base-unit * 1.0;
 	text-align: center; 
 	font-family: $font-family-body;
-	padding-bottom: $base-unit;
-	margin-top: $base-unit * 2;
-	margin-bottom: $base-unit;
-	position: relative;
+	padding-bottom: $base-unit * 0.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-	@include media-breakpoint-down(md) {
-		margin-top: $base-unit * 5;
+	@include media-breakpoint-down(sm) {
 		margin-bottom: $base-unit * 5;
+		position: relative;
 	}
 }

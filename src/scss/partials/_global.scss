@@ -23,19 +23,19 @@ h2 {
 	font-size: $base-unit * 3;
 	margin-bottom: $base-unit * 10;
 
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
 		text-align: center;
 		margin-bottom: $base-unit * 5;
 	}
 }
 
-h3 { font-size: $base-unit * 2; }
+h3 								{ font-size: $base-unit * 2; }
 
-li { list-style-type: none; }
+li 								{ list-style-type: none; }
 
-section { padding-left: $base-unit * 4; }
+section 						{ padding-left: $base-unit * 4; }
 
-.active { color: $meinnovation-highlight; }
+.active 						{ color: $meinnovation-highlight; }
 
 .button, %button {
 	background-color: $meinnovation-primary;
