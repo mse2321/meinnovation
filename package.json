@@ -1,46 +1,28 @@
 {
   "name": "meinnovation",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.6.0",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^4.0.3"
-  },
   "scripts": {
-    "webpack": "webpack",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "start": "react-scripts start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18",
+    "react-icons": "^4.12.0",
+    "react-image-gallery": "^1.3.0"
+  },
   "devDependencies": {
-    "@babel/core": "7.1.0",
-    "@babel/preset-env": "^7.1.5",
-    "babel-cli": "^6.26.0",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "copy-webpack-plugin": "^9.0.0",
-    "css-loader": "1.0.0",
-    "esmodule": "^0.1.0",
-    "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "0.4.3",
-    "node-sass": "^7.0.0",
-    "react-dev-utils": "^11.0.4",
-    "react-icons": "^3.2.2",
-    "react-image-gallery": "^0.8.16",
-    "react-router-dom": "^4.3.1",
-    "sass": "^1.34.0",
-    "sass-loader": "7.1.0",
-    "style-loader": "0.23.0"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
   }
 }
