@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+
 import logo from '../images/mei_logo.svg'
 import { FaEnvelopeSquare, FaGithub, FaLinkedin } from "react-icons/fa"
 import { Container, Row, Col } from 'react-bootstrap'

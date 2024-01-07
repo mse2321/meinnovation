@@ -13,7 +13,7 @@
 		padding: $base-unit; 
 		display: flex;
 		//overflow-y: visible;
-		overflow-y: scroll;
+		//overflow-y: scroll;
 
 		@include media-breakpoint-down(sm) { 
 			width: 100%;
@@ -37,7 +37,7 @@
 		.gallery_item {
 			display: inline;
 			margin-right: $base-unit * 4;
-			width: 40%;
+			width: 60%;
 			position: relative;
 
 			@include media-breakpoint-down(sm) { 

@@ -1,4 +1,4 @@
-import React from 'react';
+"use client"
 
 const GalleryInfo = (props: any) => {
   const { toggleModal } = props;
