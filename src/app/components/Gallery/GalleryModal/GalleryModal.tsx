@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GalleryInfo = (props) => {
+const GalleryInfo = (props: any) => {
   const { toggleModal } = props;
 
   const viewOnlineText = 'Online';

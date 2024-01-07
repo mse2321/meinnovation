@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import GalleryModal from './GalleryModal/GalleryModal';
 import projects from '../../../data/projects.json';
-import galleryImage3 from '../../images/xpCalc.jpg';
-import galleryImage2 from '../../images/bballQuiz.jpg';
-import galleryImage1 from '../../images/muzak.jpg';
+import galleryImage3 from '../images/xpCalc.jpg';
+import galleryImage2 from '../images/bballQuiz.jpg';
+import galleryImage1 from '../images/muzak.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Gallery = () => {
@@ -11,7 +11,7 @@ const Gallery = () => {
 	const [itemIndex, setItemIndex] = useState(0);
 	const [showModal, toggleModal] = useState(false);
 	
-    const changeProject = (e) => {
+    const changeProject = (e: any) => {
 	    e.preventDefault();
 	    let galleryIndex = e.target.getAttribute("data-item");
 
