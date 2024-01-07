@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GalleryModal from './GalleryModal/GalleryModal';
-import projects from '../../data/projects.json';
+import projects from '../../../data/projects.json';
 import galleryImage3 from '../../images/xpCalc.jpg';
 import galleryImage2 from '../../images/bballQuiz.jpg';
 import galleryImage1 from '../../images/muzak.jpg';
