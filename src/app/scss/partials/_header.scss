@@ -39,10 +39,11 @@ header#intro {
 		width: 5%;
 
 		@include media-breakpoint-down(sm) { 
-			padding-top: $base-unit;
 			width: 15%;
 			margin: 0 auto;
 		}
+
+		img { width: 80%; }
 
 	}
 
